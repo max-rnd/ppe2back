@@ -7,8 +7,8 @@ namespace metier;
 class exposition implements \JsonSerializable
 {
     protected $titre;
-    protected $dateDebut;
-    protected $dateFin;
+    protected $dateDebut = null;
+    protected $dateFin = null;
 
     /**
      * exposition constructor.
@@ -24,38 +24,14 @@ class exposition implements \JsonSerializable
     }
 
     /**
-     * @return mixed
-     */
-    public function getTitre()
-    {
-        return $this->titre;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDateDebut()
-    {
-        return $this->dateDebut;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getDateFin()
-    {
-        return $this->dateFin;
-    }
-
-    /**
      * @inheritDoc
      */
     public function jsonSerialize()
     {
         // TODO: Implement jsonSerialize() method.
         $tab = get_object_vars($this);
-        $tab["dateDebut"] = $this->dateDebut->format("YY");
-        $tab["dateFin"] = $this->dateFin->format("YY");
+        $tab["dateDebut"] = $this->dateDebut->format("d/m/yy");
+        $tab["dateFin"] = $this->dateFin->format("d/m/yy");
         return $tab;
     }
 }

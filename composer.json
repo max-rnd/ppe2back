@@ -8,5 +8,12 @@
       "name": "Max RENAUD",
       "email": "contact@max-renaud.fr"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-0": {
+      "metier": "",
+      "modele": "",
+      "util": ""
+    }
+  }
 }
