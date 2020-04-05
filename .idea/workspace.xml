@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +23,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+    </include_path>
+  </component>
   <component name="ProjectId" id="1a81h26IsvNUz4uEQeaiFLj7g4i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586102522766</updated>
-      <workItem from="1586102524167" duration="1216000" />
+      <workItem from="1586102524167" duration="4504000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -65,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586104335680</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add-composer">
+      <created>1586104454224</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1586104454224</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -74,7 +84,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="config-ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="config-ok" />
+    <MESSAGE value="add-composer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add-composer" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -89,30 +100,30 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="453" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586103613987" />
-    <state x="249" y="3" key="CommitChangelistDialog2" timestamp="1586104446021">
+    <state x="249" y="3" key="CommitChangelistDialog2" timestamp="1586104454004">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="249" y="3" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586104446021" />
+    <state x="249" y="3" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586104454004" />
     <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586104250827">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586104626586">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586104250827" />
-    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586104250824">
+    <state width="1238" height="212" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586104626586" />
+    <state width="1238" height="212" key="GridCell.Tab.0.center" timestamp="1586104626585">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586104250824" />
-    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586104250822">
+    <state width="1238" height="212" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586104626585" />
+    <state width="1238" height="212" key="GridCell.Tab.0.left" timestamp="1586104626584">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586104250822" />
-    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586104250825">
+    <state width="1238" height="212" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586104626584" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right" timestamp="1586104626586">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586104250825" />
+    <state width="1238" height="212" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586104626586" />
     <state x="438" y="232" key="NewPhpClassDialog" timestamp="1586102589576">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -121,5 +132,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="464" y="334" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1586103458516" />
+    <state x="402" y="29" key="refactoring.ChangeSignatureDialog" timestamp="1586105840596">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="402" y="29" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1586105840596" />
   </component>
 </project>
