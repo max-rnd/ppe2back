@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/getExpo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,22 +11,31 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
-      <executable />
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="54f5bcc0-78e6-444f-8d2a-d34c7260ad57" />
     </execution>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Max &lt;contact@max-renaud.fr&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1a81h26IsvNUz4uEQeaiFLj7g4i" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -50,12 +56,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1586102522766</updated>
-      <workItem from="1586102524167" duration="1057000" />
+      <workItem from="1586102524167" duration="1216000" />
     </task>
+    <task id="LOCAL-00001" summary="config-ok">
+      <created>1586104335680</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586104335680</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="config-ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="config-ok" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -70,6 +89,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="453" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586103613987" />
+    <state x="249" y="3" key="CommitChangelistDialog2" timestamp="1586104446021">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="249" y="3" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586104446021" />
+    <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
     <state width="1238" height="212" key="GridCell.Tab.0.bottom" timestamp="1586104250827">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
