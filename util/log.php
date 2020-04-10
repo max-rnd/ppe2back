@@ -6,16 +6,14 @@ namespace util;
 
 class log
 {
-  protected $fichLog;
+    protected $fichLog;
 
     /**
      * log constructor.
-     * @param $fichlog
      */
-    public function __construct($fichlog="")
+    public function __construct()
     {
-        if ($fichlog=="") $fichlog = $_SERVER['DOCUMENT_ROOT']."\\logs\\prod.log";
-        $this->fichLog = $fichlog;
+        $this->fichLog = $_SERVER['DOCUMENT_ROOT']."/logs/prod.log";
     }
 
     protected function enteteMessage(){

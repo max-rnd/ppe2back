@@ -1,8 +1,9 @@
 <?php
-require_once("vendor/autoload.php");
+//require_once("vendor/autoload.php");
+include_once  "../util/log.php";
 include_once "const.php";
 
-$ObjLog = new util\log();
+$ObjLog = new \util\log();
 
 try {
     $dbh = new PDO($dsn,$user,$pass);
