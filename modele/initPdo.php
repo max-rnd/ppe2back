@@ -1,6 +1,6 @@
 <?php
 //require_once("vendor/autoload.php");
-include_once  "../util/log.php";
+include_once "util/log.php";
 include_once "const.php";
 
 $ObjLog = new \util\log();
@@ -11,5 +11,6 @@ try {
 }
 catch (PDOException $e){
     $ObjLog->insertErrException($e);
-	 die();
+    echo $e;
+    die();
 }

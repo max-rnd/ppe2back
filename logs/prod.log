@@ -1,0 +1,4 @@
+[10.04.2020 12:04:50] SQLSTATE[HY000] [1045] Access denied for user 'Xeb'@'pc-15.home' (using password: YES)
+#0 /Users/max/Desktop/ppe2back/modele/initPdo.php(9): PDO->__construct('mysql:host=192....', 'Xeb', 'azerty')
+#1 /Users/max/Desktop/ppe2back/getAllCours.php(6): include_once('/Users/max/Desk...')
+#2 {main}

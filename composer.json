@@ -15,5 +15,9 @@
       "modele": "",
       "util": ""
     }
+  },
+  "require": {
+    "slim/slim": "4.4.x",
+    "slim/psr7": "1.0.0"
   }
 }

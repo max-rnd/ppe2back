@@ -60,9 +60,10 @@ class daoExposition
     {
         $resultat[0]=null;
         try{
-            $sql = "select * from exposition";
+            $sql = "select * from Exposition";
             $sth = $this->pdo->query($sql);
-            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS,  "metier/exposition");
+            //$resultat = $sth->fetchAll(\PDO::FETCH_CLASS,  "metier/exposition");
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -75,10 +76,10 @@ class daoExposition
         $resultat=null;
         try {
             $sql = "select * from exposition where dateFin > NOW() AND NOW() > dateDebut";
-            echo $sql;
             $sth = $this->pdo->query();
-            $sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
+            //$sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
+            //$resultat = $sth->fetch(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetch();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);

@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/getExpoEnCours.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metier/artiste.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metier/film.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/metier/oeuvre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="testGetAllExpo_OK">
+      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getAllCours.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testSQL.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ppe2back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ppe2back.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getExpo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/metier/exposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/exposition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/const.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/const.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getExpoEnCours.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoExposition.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/initPdo.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/initPdo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/util/log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/testDAO.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +38,16 @@
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
   <component name="ProjectId" id="1a81h26IsvNUz4uEQeaiFLj7g4i" />
@@ -54,10 +64,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/util" />
       <recent name="$PROJECT_DIR$/modele" />
     </key>
@@ -85,7 +96,8 @@
       <workItem from="1586452293396" duration="44000" />
       <workItem from="1586454510826" duration="2167000" />
       <workItem from="1586509702685" duration="1382000" />
-      <workItem from="1586511489314" duration="1298000" />
+      <workItem from="1586511489314" duration="4191000" />
+      <workItem from="1586519981899" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -115,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586126499951</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="testGetAllExpo_OK">
+      <created>1586512832502</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586512832502</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,7 +146,8 @@
     <MESSAGE value="add-composer" />
     <MESSAGE value="autoload+getExpo" />
     <MESSAGE value="log+pdo" />
-    <option name="LAST_COMMIT_MESSAGE" value="log+pdo" />
+    <MESSAGE value="testGetAllExpo_OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="testGetAllExpo_OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -146,33 +166,34 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
-    <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1586126499670">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1586520141143">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586126499670" />
+    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586520141143" />
+    <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586512831940" />
     <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom" timestamp="1586472162841">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="97" key="GridCell.Tab.0.bottom" timestamp="1586519941074">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586442949556" />
+    <state width="1878" height="97" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586519941074" />
     <state width="1238" height="97" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586472162841" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center" timestamp="1586472162840">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="97" key="GridCell.Tab.0.center" timestamp="1586519941071">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586442949547" />
+    <state width="1878" height="97" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586519941071" />
     <state width="1238" height="97" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586472162840" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left" timestamp="1586472162839">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="97" key="GridCell.Tab.0.left" timestamp="1586519941068">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586442949544" />
+    <state width="1878" height="97" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586519941068" />
     <state width="1238" height="97" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586472162839" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right" timestamp="1586472162840">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="97" key="GridCell.Tab.0.right" timestamp="1586519941072">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="146" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586442949551" />
+    <state width="1878" height="97" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586519941072" />
     <state width="1238" height="97" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586472162840" />
     <state x="438" y="232" key="NewPhpClassDialog" timestamp="1586427643471">
       <screen x="0" y="0" width="1280" height="800" />
