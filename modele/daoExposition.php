@@ -31,7 +31,7 @@ class daoExposition
      * @param $pdo
      * @param $objLog
      */
-    public function __construct($pdo, $objLog)
+    public function __construct(\PDO $pdo, $objLog)
     {
         $this->pdo = $pdo;
         $this->objLog = $objLog;
@@ -49,7 +49,7 @@ class daoExposition
     /**
      * @param mixed $pdo
      */
-    public function setPdo($pdo)
+    public function setPdo(\PDO $pdo)
     {
         $this->pdo = $pdo;
     }
@@ -71,13 +71,13 @@ class daoExposition
 
     public function getExpoEnCours() // : exposition      <- Poser question
     {
-        $resultat[0]=null;
+        $resultat=null;
         try {
-            $sql = "select * from Exposition where endDate > NOW() AND NOW() > startDate";
+            $sql = "select * from exposition where dateFin > NOW() AND NOW() > dateDebut";
             $sth = $this->pdo->query($sql);
-            //$sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition'); //     <- Poser question
-            //$resultat = $sth->fetch(\PDO::FETCH_CLASS);
-            $resultat = $sth->fetchAll();
+            $sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
+            $sth->execute();
+            $resultat = $sth->fetch();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -88,7 +88,7 @@ class daoExposition
             // $resultat = new exposition();
             // $resultat->setTitre("NULL");
         }
-        return $resultat[0];
+        return $resultat;
     }
 
     public function getProchaineExpo() : exposition

@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/getArtiste.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getExpoEnCours.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/insertExpo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modele/daoArtiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ppe2back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ppe2back.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAllExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/getAllExpo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metier/artiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/artiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metier/exposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/exposition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/const.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/const.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoExposition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testDAO.php" beforeDir="false" afterPath="$PROJECT_DIR$/testDAO.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +79,7 @@
       <workItem from="1586509702685" duration="1382000" />
       <workItem from="1586511489314" duration="4191000" />
       <workItem from="1586519981899" duration="10972000" />
-      <workItem from="1587124016588" duration="3621000" />
+      <workItem from="1587124016588" duration="5807000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -137,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586520384459</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="insert_OK">
+      <created>1587127997658</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1587127997658</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,7 +144,8 @@
     <MESSAGE value="log+pdo" />
     <MESSAGE value="testGetAllExpo_OK" />
     <MESSAGE value="getAllExpo_OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="getAllExpo_OK" />
+    <MESSAGE value="insert_OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="insert_OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -171,10 +165,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
-    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1586520383958">
+    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587127997166">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586520383958" />
+    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587127997166" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586512831940" />
     <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
       <screen x="0" y="0" width="1280" height="800" />
