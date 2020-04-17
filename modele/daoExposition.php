@@ -58,9 +58,8 @@ class daoExposition
     {
         $resultat[0]=null;
         try{
-            $sql = "select * from Exposition";
+            $sql = "select * from exposition";
             $sth = $this->pdo->query($sql);
-            //$resultat = $sth->fetchAll(\PDO::FETCH_CLASS,  "metier/exposition");
             $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
@@ -81,12 +80,11 @@ class daoExposition
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
-            echo $e;                                    // Affichage erreur sql
         }
-        if ($resultat==null)
+        if ($resultat == null)
         {
-            // $resultat = new exposition();
-            // $resultat->setTitre("NULL");
+            //$resultat = new exposition();
+            //$resultat->setTitre("NULL");
         }
         return $resultat;
     }

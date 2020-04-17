@@ -1,3 +1,3 @@
 <?php
 
-include_once "getExpoEnCours.php";
+include_once "getArtiste.php";

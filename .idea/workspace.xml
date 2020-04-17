@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/insertArtiste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoArtiste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoExposition.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +81,7 @@
       <workItem from="1586509702685" duration="1382000" />
       <workItem from="1586511489314" duration="4191000" />
       <workItem from="1586519981899" duration="10972000" />
-      <workItem from="1587124016588" duration="5807000" />
+      <workItem from="1587124016588" duration="8550000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -130,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587127997658</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FETCH_CLASS_OK">
+      <created>1587130268919</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587130268919</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +154,8 @@
     <MESSAGE value="testGetAllExpo_OK" />
     <MESSAGE value="getAllExpo_OK" />
     <MESSAGE value="insert_OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert_OK" />
+    <MESSAGE value="FETCH_CLASS_OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="FETCH_CLASS_OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -161,14 +171,15 @@
     </state>
     <state x="362" y="-913" key="#com.intellij.ide.util.MemberChooser/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586527353424" />
     <state x="453" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586455971351" />
-    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586124893863">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
-    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587127997166">
+    <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587131253148">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587127997166" />
+    <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587131253148" />
+    <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
+    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587130268548">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587130268548" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586512831940" />
     <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
       <screen x="0" y="0" width="1280" height="800" />

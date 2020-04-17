@@ -15,7 +15,7 @@ class daoArtiste
      * @param $pdo
      * @param $objLog
      */
-    public function __construct($pdo, $objLog)
+    public function __construct(\PDO $pdo, $objLog)
     {
         $this->pdo = $pdo;
         $this->objLog = $objLog;
@@ -53,24 +53,38 @@ class daoArtiste
         $this->objLog = $objLog;
     }
 
-    public function getArtiste(int $id) // : artiste
+    public function getArtiste(int $idExpo) // : artiste
     {
-        $resultat=null;
+        $resultat[0]=null;
         try {
-            $sql = "select * from Artiste where id = $id";
+            $sql = "select * from artiste where expo = $idExpo";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, \metier\artiste::class);
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
-            //$resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
-            echo $e;
             $this->objLog->insertErrException($e);
         }
         if ($resultat == null)
         {
-            //$resultat = new artiste();
+            //$resultat = new artiste(); // On ne peux pas crée d'objet quand on est dans une class (apparemment)
         }
-        return $resultat;
+        return $resultat[0]; // [0] pour si il y a plusieurs artiste sur une même expo (pas encore géré)
+    }
+    public function insert(artiste $lartiste){
+        try {
+            $tab['nom'] = $lartiste->getNom();
+            $tab['prenom'] = $lartiste->getPrenom();
+            $tab['portait'] = $lartiste->getPortait();
+            $tab['resuBio'] = $lartiste->getResuBio();
+            $tab['bio'] = $lartiste->getBio();
+
+            $sql = "INSERT INTO artiste (nom, prenom, portait, resuBio, bio) VALUES (:nom, :prenom, :portait, :resuBio, :bio)";
+            $sth = $this->pdo->prepare($sql);
+            $sth->execute($tab);
+        }
+        catch (\PDOException $e) {
+            $this->objLog->insertErrException($e);
+            echo $e;
+        }
     }
 }
