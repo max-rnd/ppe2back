@@ -1,2 +1,3 @@
 <?php
-echo "coucou";
+
+include_once "insertExpo.php";

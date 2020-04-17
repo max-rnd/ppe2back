@@ -6,28 +6,11 @@ namespace metier;
 
 class exposition implements \JsonSerializable
 {
-    protected $id;
-    protected $titre;
-    protected $noteComm;
+    protected $id = null;
+    protected $titre = null;
+    protected $noteComm = null;
     protected $dateDebut = null;
     protected $dateFin = null;
-
-    /**
-     * exposition constructor.
-     * @param $id
-     * @param $titre
-     * @param $noteComm
-     * @param null $dateDebut
-     * @param null $dateFin
-     */
-    public function __construct($id, $titre, $noteComm, $dateDebut, $dateFin)
-    {
-        $this->id = $id;
-        $this->titre = $titre;
-        $this->noteComm = $noteComm;
-        $this->dateDebut = $dateDebut;
-        $this->dateFin = $dateFin;
-    }
 
     /**
      * @return mixed

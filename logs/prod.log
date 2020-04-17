@@ -2,3 +2,231 @@
 #0 /Users/max/Desktop/ppe2back/modele/initPdo.php(9): PDO->__construct('mysql:host=192....', 'Xeb', 'azerty')
 #1 /Users/max/Desktop/ppe2back/getAllCours.php(6): include_once('/Users/max/Desk...')
 #2 {main}
+[10.04.2020 12:15:17] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:16:59] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:20:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:23:13] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:23:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:24:27] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:26:21] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:26:46] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:26:56] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dateFin' in 'where clause'
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from E...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:27:50] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dateFin' in 'where clause'
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from E...')
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:28:40] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:29:34] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:30:02] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:30:30] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:30:49] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 12:35:03] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(81): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:06:26] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:06:46] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:07:44] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:08:26] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:09:27] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:09:47] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:10:13] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:20:18] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:21:44] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:21:51] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 01:40:01] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 01:40:13] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 01:43:31] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 01:43:43] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 01:43:50] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 01:44:18] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[10.04.2020 02:05:14] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:07:27] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:08:06] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:10:50] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:11:34] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:11:50] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:12:14] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:12:21] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:17:15] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:26:24] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:29:13] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:29:20] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:52:24] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:52:39] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:52:45] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 02:56:13] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 03:07:34] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 03:07:48] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 03:08:32] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(64): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[10.04.2020 03:10:52] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoArtiste.php(63): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(11): modele\daoArtiste->getArtiste(1)
+#2 {main}
+[17.04.2020 11:48:04] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
+#3 {main}
+[17.04.2020 12:49:48] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
+#3 {main}
+[17.04.2020 12:50:24] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
+#3 {main}
+[17.04.2020 12:51:28] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
+#3 {main}

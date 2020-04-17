@@ -14,26 +14,6 @@ class artiste implements \JsonSerializable
     protected $bio;
     protected $expo;
 
-    /**
-     * artiste constructor.
-     * @param $id
-     * @param $nom
-     * @param $prenom
-     * @param $portait
-     * @param $resuBio
-     * @param $bio
-     * @param $expo
-     */
-    public function __construct($id, $nom, $prenom, $portait, $resuBio, $bio, $expo)
-    {
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->prenom = $prenom;
-        $this->portait = $portait;
-        $this->resuBio = $resuBio;
-        $this->bio = $bio;
-        $this->expo = $expo;
-    }
 
     /**
      * @return mixed

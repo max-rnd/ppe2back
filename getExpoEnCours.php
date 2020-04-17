@@ -8,4 +8,4 @@ include_once "modele/daoExposition.php";
 
 $dao = new \modele\daoExposition($dbh,$ObjLog);
 
-echo json_encode($dao->getAllExpo());
+echo json_encode($dao->getExpoEnCours());

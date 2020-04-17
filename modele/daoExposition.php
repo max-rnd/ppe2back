@@ -1,10 +1,8 @@
 <?php
 
-
 namespace modele;
 
 use metier\exposition;
-
 
 class daoExposition
 {
@@ -71,34 +69,35 @@ class daoExposition
         return $resultat;
     }
 
-    public function getExpoEnCours() : exposition
+    public function getExpoEnCours() // : exposition      <- Poser question
     {
-        $resultat=null;
+        $resultat[0]=null;
         try {
-            $sql = "select * from exposition where dateFin > NOW() AND NOW() > dateDebut";
-            $sth = $this->pdo->query();
-            //$sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
+            $sql = "select * from Exposition where endDate > NOW() AND NOW() > startDate";
+            $sth = $this->pdo->query($sql);
+            //$sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition'); //     <- Poser question
             //$resultat = $sth->fetch(\PDO::FETCH_CLASS);
-            $resultat = $sth->fetch();
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
+            echo $e;                                    // Affichage erreur sql
         }
         if ($resultat==null)
         {
-            $resultat = new exposition();
-            $resultat->setNom("NULL");
+            // $resultat = new exposition();
+            // $resultat->setTitre("NULL");
         }
-        return $resultat;
+        return $resultat[0];
     }
 
     public function getProchaineExpo() : exposition
     {
         $resultat = null;
         try {
-            $sql = "select * from exposition where dateDebut > NOW() ORDER By dateDebut";
+            $sql = "select * from exposition where endDate > NOW() ORDER By stratDate";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
+            $sth->setFetchMode(PDO::FETCH_PROPS_LATE,\PDO::FETCH_CLASS, 'metier/exposition');
             $resultat = $sth->fetch(\PDO::FETCH_CLASS);
         } catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
@@ -112,17 +111,18 @@ class daoExposition
 
     public function insert(exposition $lexpo){
         try {
-            $tab['nom'] = $lexpo->getNom();
-            $tab['dateDebut'] = $lexpo->getDateDebut()->format('Y-m-d H:i:s');
-            $tab['dateFin'] = $lexpo->getDateFin()->format('Y-m-d H:i:s');
-            $tab['idArtiste'] = $lexpo->getIdArtiste();
+            $tab['titre'] = $lexpo->getTitre();
+            $tab['noteComm'] = $lexpo->getNoteComm();
+            $tab['dateDebut'] = $lexpo->getDateDebut()->format('Y-m-d');
+            $tab['dateFin'] = $lexpo->getDateFin()->format('Y-m-d');
 
-            $sql = "INSERT INTO exposition ( nom, dateDebut, dateFin, idArtiste) VALUES (:nom, :dateDebut, :dateFin, :idArtiste)";
+            $sql = "INSERT INTO exposition (titre, noteComm, dateDebut, dateFin) VALUES (:titre, :noteComm, :dateDebut, :dateFin)";
             $sth = $this->pdo->prepare($sql);
             $sth->execute($tab);
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
+            echo $e;
         }
     }
 }
