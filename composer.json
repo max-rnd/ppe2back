@@ -1,23 +1,23 @@
 {
-  "name": "vendor_name/package_name",
-  "description": "description_text",
+  "name": "vendor_name/ppe2back",
+  "description": "description",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
     {
-      "name": "Max RENAUD",
-      "email": "contact@max-renaud.fr"
+      "name": "max",
+      "email": "email@example.com"
     }
   ],
+  "require": {
+    "slim/slim": "4.4.x",
+    "slim/psr7": "1.0.0"
+  },
   "autoload": {
     "psr-0": {
       "metier": "",
       "modele": "",
       "util": ""
-    },
-    "require": {
-      "slim/slim": "4.4.x",
-      "slim/psr7": "1.0.0"
     }
   }
 }

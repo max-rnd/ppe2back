@@ -1,16 +1,208 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="getArtiste_+_insertArtiste_OK">
+    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vendor/autoload.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_real.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/composer/platform_check.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/src/RequestMethodInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/fig/http-message-util/src/StatusCodeInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/.hhconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/FastRoute.hhi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/phpunit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/psalm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/BadRouteException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator/CharCountBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator/GroupCountBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator/GroupPosBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator/MarkBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/DataGenerator/RegexBasedAbstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher/CharCountBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher/GroupCountBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher/GroupPosBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher/MarkBased.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Dispatcher/RegexBasedAbstract.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/RouteCollector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/RouteParser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/RouteParser/Std.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/src/functions.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/Dispatcher/CharCountBasedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/Dispatcher/DispatcherTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/Dispatcher/GroupCountBasedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/Dispatcher/GroupPosBasedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/Dispatcher/MarkBasedTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/HackTypechecker/HackTypecheckerTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/HackTypechecker/fixtures/all_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/HackTypechecker/fixtures/empty_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/HackTypechecker/fixtures/no_options.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/RouteCollectorTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/RouteParser/StdTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/nikic/fast-route/test/bootstrap.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/ContainerExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/ContainerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/container/src/NotFoundExceptionInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/.pullapprove.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/RequestFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/ResponseFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/ServerRequestFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/StreamFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/UploadedFileFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-factory/src/UriFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/MessageInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/RequestInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ResponseInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/ServerRequestInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/StreamInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UploadedFileInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-message/src/UriInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-handler/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-handler/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-handler/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-handler/src/RequestHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-middleware/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-middleware/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-middleware/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/psr/http-server-middleware/src/MiddlewareInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/ralouphie/getallheaders/src/getallheaders.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/MAINTAINERS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/composer.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Cookies.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Environment.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/RequestFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/ResponseFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/ServerRequestFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/StreamFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/UploadedFileFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Factory/UriFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Headers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Interfaces/HeadersInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/NonBufferedBody.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Request.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Response.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Stream.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/UploadedFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/psr7/src/Uri.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/MAINTAINERS.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/App.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/CallableResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Error/AbstractErrorRenderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Error/Renderers/HtmlErrorRenderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Error/Renderers/JsonErrorRenderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Error/Renderers/PlainTextErrorRenderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Error/Renderers/XmlErrorRenderer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpBadRequestException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpForbiddenException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpInternalServerErrorException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpMethodNotAllowedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpNotFoundException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpNotImplementedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpSpecializedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Exception/HttpUnauthorizedException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/AppFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/GuzzlePsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/LaminasDiactorosPsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/NyholmPsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/Psr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/Psr17FactoryProvider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/ServerRequestCreator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/SlimHttpPsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/SlimHttpServerRequestCreator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/SlimPsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/Psr17/ZendDiactorosPsr17Factory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Factory/ServerRequestCreatorFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Handlers/ErrorHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Handlers/Strategies/RequestHandler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponse.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Handlers/Strategies/RequestResponseArgs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/AdvancedCallableResolverInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/CallableResolverInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/DispatcherInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/ErrorHandlerInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/ErrorRendererInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/InvocationStrategyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/MiddlewareDispatcherInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/Psr17FactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/Psr17FactoryProviderInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RequestHandlerInvocationStrategyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteCollectorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteCollectorProxyInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteGroupInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteParserInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/RouteResolverInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Interfaces/ServerRequestCreatorInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/BodyParsingMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/ContentLengthMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/ErrorMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/MethodOverrideMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/OutputBufferingMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Middleware/RoutingMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/MiddlewareDispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/ResponseEmitter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/Dispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/FastRouteDispatcher.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/Route.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteCollector.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteCollectorProxy.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteContext.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteGroup.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteParser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteResolver.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RouteRunner.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/Slim/Routing/RoutingResults.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/slim/slim/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ppe2back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ppe2back.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAllExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/getAllExpo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/getArtiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getExpoEnCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/getExpoEnCours.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.phar" beforeDir="false" afterPath="$PROJECT_DIR$/composer.phar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertArtiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertExpo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoArtiste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metier/exposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/exposition.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoExposition.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +216,13 @@
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="54f5bcc0-78e6-444f-8d2a-d34c7260ad57" />
     </execution>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -32,11 +231,7 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
-    <include_path>
-      <path value="$PROJECT_DIR$/vendor/composer" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
   <component name="ProjectId" id="1a81h26IsvNUz4uEQeaiFLj7g4i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -90,7 +285,7 @@
       <workItem from="1587355968602" duration="100000" />
       <workItem from="1587605819687" duration="536000" />
       <workItem from="1588147413883" duration="15000" />
-      <workItem from="1588147455266" duration="960000" />
+      <workItem from="1588147455266" duration="6168000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -155,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587133076134</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="autoload_OK">
+      <created>1588148441516</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1588148441516</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,12 +374,14 @@
     <MESSAGE value="insert_OK" />
     <MESSAGE value="FETCH_CLASS_OK" />
     <MESSAGE value="getArtiste_+_insertArtiste_OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="getArtiste_+_insertArtiste_OK" />
+    <MESSAGE value="autoload_OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="autoload_OK" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="-318" y="-1080" width="619" height="800" key="#PHP" timestamp="1588153256132">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
+    <state x="-318" y="-1080" key="#PHP/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588153256132" />
     <state x="0" y="0" width="619" height="800" key="#PHP/0.0.1280.800@0.0.1280.800" timestamp="1586104046930" />
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586104249189">
       <screen x="0" y="0" width="1280" height="800" />
@@ -197,37 +401,38 @@
     </state>
     <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587131253148" />
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
-    <state x="-191" y="-993" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587137324068">
+    <state x="-191" y="-993" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1588148441130">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137324068" />
+    <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588148441130" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586512831940" />
-    <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
-      <screen x="0" y="0" width="1280" height="800" />
-    </state>
-    <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
-    <state width="1878" height="178" key="GridCell.Tab.0.bottom" timestamp="1588147981142">
+    <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey" timestamp="1588150264570">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488278" />
+    <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150264570" />
+    <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
+    <state width="1878" height="178" key="GridCell.Tab.0.bottom" timestamp="1588150610775">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
+    </state>
+    <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150610775" />
     <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981142" />
     <state width="1238" height="121" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587606425385" />
-    <state width="1878" height="178" key="GridCell.Tab.0.center" timestamp="1588147981140">
+    <state width="1878" height="178" key="GridCell.Tab.0.center" timestamp="1588150610771">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488275" />
+    <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150610771" />
     <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981140" />
     <state width="1238" height="121" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1587606425383" />
-    <state width="1878" height="178" key="GridCell.Tab.0.left" timestamp="1588147981139">
+    <state width="1878" height="178" key="GridCell.Tab.0.left" timestamp="1588150610769">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488271" />
+    <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150610769" />
     <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981139" />
     <state width="1238" height="121" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1587606425382" />
-    <state width="1878" height="178" key="GridCell.Tab.0.right" timestamp="1588147981141">
+    <state width="1878" height="178" key="GridCell.Tab.0.right" timestamp="1588150610773">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488276" />
+    <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150610773" />
     <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981141" />
     <state width="1238" height="121" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1587606425385" />
     <state x="339" y="-767" key="NewPhpClassDialog" timestamp="1586524553092">
@@ -256,5 +461,9 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="402" y="29" key="refactoring.ChangeSignatureDialog/0.0.1280.800@0.0.1280.800" timestamp="1586105840596" />
+    <state x="307" y="-284" key="run.anything.popup" timestamp="1588148421784">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
+    </state>
+    <state x="307" y="-284" key="run.anything.popup/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588148421784" />
   </component>
 </project>
