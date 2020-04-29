@@ -322,3 +322,76 @@
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(62): PDO->query('select * from E...')
 #1 /Users/max/Desktop/ppe2back/getAllExpo.php(11): modele\daoExposition->getAllExpo()
 #2 {main}
+[17.04.2020 02:52:16] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:55:57] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:56:16] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:57:04] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:57:30] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:59:53] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 02:59:56] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:00:11] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:03:53] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:07:53] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:10:14] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:10:31] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:17:29] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:26:29] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:26:38] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:26:44] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[17.04.2020 03:27:07] SQLSTATE[HY000]: General error: No fetch class specified
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDOStatement->fetch(8)
+#1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
+#2 {main}
+[18.04.2020 03:38:30] SQLSTATE[HY000] [2002] Network is unreachable
+#0 /Users/max/Desktop/ppe2back/modele/initPdo.php(9): PDO->__construct('mysql:host=192....', 'web', 'azerty')
+#1 /Users/max/Desktop/ppe2back/getArtiste.php(6): include_once('/Users/max/Desk...')
+#2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
+#3 {main}

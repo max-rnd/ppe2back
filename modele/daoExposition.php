@@ -60,7 +60,9 @@ class daoExposition
         try{
             $sql = "select * from exposition";
             $sth = $this->pdo->query($sql);
-            $resultat = $sth->fetchAll();
+            $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
+            $sth->execute();
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -74,9 +76,9 @@ class daoExposition
         try {
             $sql = "select * from exposition where dateFin > NOW() AND NOW() > dateDebut";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, 'metier/exposition');
+            $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
             $sth->execute();
-            $resultat = $sth->fetch();
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -86,23 +88,24 @@ class daoExposition
             //$resultat = new exposition();
             //$resultat->setTitre("NULL");
         }
-        return $resultat;
+        return $resultat[0];
     }
 
-    public function getProchaineExpo() : exposition
+    public function getProchaineExpo()// : exposition
     {
         $resultat = null;
         try {
-            $sql = "select * from exposition where endDate > NOW() ORDER By stratDate";
+            $sql = "select * from exposition where dateFin > NOW() ORDER By dateDebut";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(PDO::FETCH_PROPS_LATE,\PDO::FETCH_CLASS, 'metier/exposition');
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
+            $sth->execute();
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         } catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
         }
         if ($resultat == null) {
-            $resultat = new exposition();
-            $resultat->setNom("NULL");
+            //$resultat = new exposition();
+            //$resultat->setNom("NULL");
         }
         return $resultat;
     }
@@ -120,7 +123,6 @@ class daoExposition
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
-            echo $e;
         }
     }
 }

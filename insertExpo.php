@@ -5,10 +5,10 @@ include_once "modele/daoExposition.php";
 
 // Données
 
-$titre = "Une exposition";
-$noteComm = "Voila la note du commissaire";
-$dateDebut = new \DateTime("2020-01-01");
-$dateFin = new \DateTime("2021-01-01");
+$titre = "Une autre exposition";
+$noteComm = "Voila l'autre note du commissaire";
+$dateDebut = new \DateTime("2021-01-01");
+$dateFin = new \DateTime("2022-01-01");
 
 // -------
 

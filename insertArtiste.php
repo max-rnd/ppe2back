@@ -1,6 +1,7 @@
 <?php
-include_once "metier/artiste.php";
-include_once "modele/initPdo.php";
+require_once "vendor/autoload.php";
+//include_once "metier/artiste.php";
+//include_once "modele/initPdo.php";
 include_once "modele/daoArtiste.php";
 
 // Données

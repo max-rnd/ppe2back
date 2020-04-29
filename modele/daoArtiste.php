@@ -59,7 +59,9 @@ class daoArtiste
         try {
             $sql = "select * from artiste where expo = $idExpo";
             $sth = $this->pdo->query($sql);
-            $resultat = $sth->fetchAll();
+            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
+            $sth->execute();
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);

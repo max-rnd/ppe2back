@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/insertArtiste.php" afterDir="false" />
+    <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="getArtiste_+_insertArtiste_OK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getAllExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/getAllExpo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/getArtiste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getExpoEnCours.php" beforeDir="false" afterPath="$PROJECT_DIR$/getExpoEnCours.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertArtiste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertExpo.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoArtiste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoExposition.php" afterDir="false" />
@@ -39,7 +43,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -81,7 +84,13 @@
       <workItem from="1586509702685" duration="1382000" />
       <workItem from="1586511489314" duration="4191000" />
       <workItem from="1586519981899" duration="10972000" />
-      <workItem from="1587124016588" duration="8550000" />
+      <workItem from="1587124016588" duration="12541000" />
+      <workItem from="1587221620416" duration="317000" />
+      <workItem from="1587222856595" duration="1897000" />
+      <workItem from="1587355968602" duration="100000" />
+      <workItem from="1587605819687" duration="536000" />
+      <workItem from="1588147413883" duration="15000" />
+      <workItem from="1588147455266" duration="960000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -139,11 +148,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587130268919</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="getArtiste_+_insertArtiste_OK">
+      <created>1587133076134</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587133076134</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -155,7 +171,8 @@
     <MESSAGE value="getAllExpo_OK" />
     <MESSAGE value="insert_OK" />
     <MESSAGE value="FETCH_CLASS_OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="FETCH_CLASS_OK" />
+    <MESSAGE value="getArtiste_+_insertArtiste_OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="getArtiste_+_insertArtiste_OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="0" width="619" height="800" key="#PHP" timestamp="1586104046930">
@@ -171,40 +188,48 @@
     </state>
     <state x="362" y="-913" key="#com.intellij.ide.util.MemberChooser/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586527353424" />
     <state x="453" y="124" key="#com.intellij.ide.util.MemberChooser/0.0.1280.800@0.0.1280.800" timestamp="1586455971351" />
+    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1587221640553">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1587221640553" />
     <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587131253148">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
     <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587131253148" />
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1586124893863" />
-    <state x="-318" y="-1080" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587130268548">
+    <state x="-191" y="-993" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1587137324068">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-318" y="-1080" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587130268548" />
+    <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137324068" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1586512831940" />
     <state x="406" y="291" key="ComposerInitDialogKey" timestamp="1586104363089">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
-    <state width="1878" height="178" key="GridCell.Tab.0.bottom" timestamp="1587124836224">
+    <state width="1878" height="178" key="GridCell.Tab.0.bottom" timestamp="1588147981142">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587124836224" />
-    <state width="1238" height="97" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1586472162841" />
-    <state width="1878" height="178" key="GridCell.Tab.0.center" timestamp="1587124836221">
+    <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488278" />
+    <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981142" />
+    <state width="1238" height="121" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1587606425385" />
+    <state width="1878" height="178" key="GridCell.Tab.0.center" timestamp="1588147981140">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587124836221" />
-    <state width="1238" height="97" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1586472162840" />
-    <state width="1878" height="178" key="GridCell.Tab.0.left" timestamp="1587124836219">
+    <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488275" />
+    <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981140" />
+    <state width="1238" height="121" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1587606425383" />
+    <state width="1878" height="178" key="GridCell.Tab.0.left" timestamp="1588147981139">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587124836219" />
-    <state width="1238" height="97" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1586472162839" />
-    <state width="1878" height="178" key="GridCell.Tab.0.right" timestamp="1587124836222">
+    <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488271" />
+    <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981139" />
+    <state width="1238" height="121" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1587606425382" />
+    <state width="1878" height="178" key="GridCell.Tab.0.right" timestamp="1588147981141">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587124836222" />
-    <state width="1238" height="97" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1586472162840" />
+    <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587137488276" />
+    <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981141" />
+    <state width="1238" height="121" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1587606425385" />
     <state x="339" y="-767" key="NewPhpClassDialog" timestamp="1586524553092">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
