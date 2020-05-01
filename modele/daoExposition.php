@@ -70,7 +70,7 @@ class daoExposition
         return $resultat;
     }
 
-    public function getExpoEnCours() : exposition //      <- Poser question
+    public function getExpoEnCours() : exposition
     {
         $resultat=null;
         try {
@@ -78,7 +78,6 @@ class daoExposition
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
             $sth->execute();
-            //$resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
             $resultat = $sth->fetch(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
@@ -92,11 +91,11 @@ class daoExposition
         return $resultat;
     }
 
-    public function getProchaineExpo()// : exposition
+    public function getProchaineExpo() : exposition
     {
         $resultat = null;
         try {
-            $sql = "select * from exposition where dateFin > NOW() ORDER By dateDebut";
+            $sql = "select * from exposition where dateFin > NOW() ORDER BY dateDebut";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
             $sth->execute();
@@ -105,8 +104,8 @@ class daoExposition
             $this->objLog->insertErrException($e);
         }
         if ($resultat == null) {
-            //$resultat = new exposition();
-            //$resultat->setNom("NULL");
+            $resultat = new exposition();
+            $resultat->setTitre("NULL");
         }
         return $resultat;
     }

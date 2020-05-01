@@ -3,19 +3,19 @@
 
 namespace modele;
 
-use metier\artiste;
+use metier\film;
 
-class daoArtiste
+class daoFilm
 {
     protected $pdo;
     protected $objLog;
 
     /**
-     * daoArtiste constructor.
+     * daoFilm constructor.
      * @param $pdo
      * @param $objLog
      */
-    public function __construct(\PDO $pdo, $objLog)
+    public function __construct($pdo, $objLog)
     {
         $this->pdo = $pdo;
         $this->objLog = $objLog;
@@ -53,41 +53,39 @@ class daoArtiste
         $this->objLog = $objLog;
     }
 
-    public function getArtiste(int $idExpo) : artiste
+    public function getFilms(int $idArtiste) : array
     {
-        $resultat=null;
+        $resultat[0]=null;
         try {
-            $sql = "select * from artiste where expo = $idExpo";
+            $sql = "select * from artiste where artiste = $idArtiste";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, film::class);
             $sth->execute();
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
         }
-        if ($resultat == null)
+        if ($resultat[0]==null)
         {
-            $resultat = new artiste();
-            $resultat->setNom("NULL");
+            $resultat[0] = new film();
+            $resultat[0]->setNom("NULL");
         }
         return $resultat;
     }
-    public function insert(artiste $lartiste){
+    public function insert(film $lefilm){
         try {
-            $tab['nom'] = $lartiste->getNom();
-            $tab['prenom'] = $lartiste->getPrenom();
-            $tab['portait'] = $lartiste->getPortait();
-            $tab['resuBio'] = $lartiste->getResuBio();
-            $tab['bio'] = $lartiste->getBio();
+            $tab['nom'] = $lefilm->getNom();
+            $tab['description'] = $lefilm->getDescription();
+            $tab['image'] = $lefilm->getImage();
+            $tab['artiste'] = $lefilm->getArtiste();
 
-            $sql = "INSERT INTO artiste (nom, prenom, portait, resuBio, bio) VALUES (:nom, :prenom, :portait, :resuBio, :bio)";
+            $sql = "INSERT INTO film (nom, description, image, artiste) VALUES (:nom, :description, :image, :artiste)";
             $sth = $this->pdo->prepare($sql);
             $sth->execute($tab);
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
-            echo $e;
         }
     }
 }

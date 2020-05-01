@@ -3,9 +3,9 @@
 
 namespace modele;
 
-use metier\artiste;
+use metier\oeuvre;
 
-class daoArtiste
+class daoOeuvre
 {
     protected $pdo;
     protected $objLog;
@@ -53,41 +53,39 @@ class daoArtiste
         $this->objLog = $objLog;
     }
 
-    public function getArtiste(int $idExpo) : artiste
+    public function getOeuvres(int $idArtiste) : array
     {
-        $resultat=null;
+        $resultat[0]=null;
         try {
-            $sql = "select * from artiste where expo = $idExpo";
+            $sql = "select * from oeuvre where artiste = $idArtiste";
             $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, oeuvre::class);
             $sth->execute();
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
         }
-        if ($resultat == null)
+        if ($resultat[0] == null)
         {
-            $resultat = new artiste();
-            $resultat->setNom("NULL");
+            $resultat[0] = new oeuvre();
+            $resultat[0]->setNom("NULL");
         }
         return $resultat;
     }
-    public function insert(artiste $lartiste){
+    public function insert(oeuvre $loeuvre){
         try {
-            $tab['nom'] = $lartiste->getNom();
-            $tab['prenom'] = $lartiste->getPrenom();
-            $tab['portait'] = $lartiste->getPortait();
-            $tab['resuBio'] = $lartiste->getResuBio();
-            $tab['bio'] = $lartiste->getBio();
+            $tab['nom'] = $loeuvre->getNom();
+            $tab['date'] = $loeuvre->getDate();
+            $tab['image'] = $loeuvre->getImage();
+            $tab['artiste'] = $loeuvre->getArtiste();
 
-            $sql = "INSERT INTO artiste (nom, prenom, portait, resuBio, bio) VALUES (:nom, :prenom, :portait, :resuBio, :bio)";
+            $sql = "INSERT INTO oeuvre (nom, date, image, artiste) VALUES (:nom, :date, :image, :artiste)";
             $sth = $this->pdo->prepare($sql);
             $sth->execute($tab);
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
-            echo $e;
         }
     }
 }
