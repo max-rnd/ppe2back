@@ -11,6 +11,7 @@ class exposition implements \JsonSerializable
     protected $noteComm = null;
     protected $dateDebut = null;
     protected $dateFin = null;
+    protected $artiste;
 
     /**
      * @return mixed
@@ -90,6 +91,22 @@ class exposition implements \JsonSerializable
     public function setDateFin($dateFin): void
     {
         $this->dateFin = $dateFin;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getArtiste()
+    {
+        return $this->artiste;
+    }
+
+    /**
+     * @param mixed $artiste
+     */
+    public function setArtiste(int $artiste): void
+    {
+        $this->artiste = $artiste;
     }
 
 

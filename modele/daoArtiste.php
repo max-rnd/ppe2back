@@ -53,11 +53,11 @@ class daoArtiste
         $this->objLog = $objLog;
     }
 
-    public function getArtiste(int $idExpo) : artiste
+    public function getArtiste(int $id) : artiste
     {
         $resultat=null;
         try {
-            $sql = "select * from artiste where expo = $idExpo";
+            $sql = "select * from artiste where id = $id";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
             $sth->execute();
@@ -87,7 +87,6 @@ class daoArtiste
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
-            echo $e;
         }
     }
 }

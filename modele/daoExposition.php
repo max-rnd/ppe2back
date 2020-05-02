@@ -116,8 +116,9 @@ class daoExposition
             $tab['noteComm'] = $lexpo->getNoteComm();
             $tab['dateDebut'] = $lexpo->getDateDebut()->format('Y-m-d');
             $tab['dateFin'] = $lexpo->getDateFin()->format('Y-m-d');
+            $tab['artiste'] = $lexpo->getArtiste();
 
-            $sql = "INSERT INTO exposition (titre, noteComm, dateDebut, dateFin) VALUES (:titre, :noteComm, :dateDebut, :dateFin)";
+            $sql = "INSERT INTO exposition (titre, noteComm, dateDebut, dateFin, artiste) VALUES (:titre, :noteComm, :dateDebut, :dateFin, :artiste)";
             $sth = $this->pdo->prepare($sql);
             $sth->execute($tab);
         }

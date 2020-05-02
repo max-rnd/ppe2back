@@ -12,7 +12,6 @@ class artiste implements \JsonSerializable
     protected $portait;
     protected $resuBio;
     protected $bio;
-    protected $expo;
 
 
     /**
@@ -109,22 +108,6 @@ class artiste implements \JsonSerializable
     public function setBio($bio): void
     {
         $this->bio = $bio;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getExpo()
-    {
-        return $this->expo;
-    }
-
-    /**
-     * @param mixed $expo
-     */
-    public function setExpo($expo): void
-    {
-        $this->expo = $expo;
     }
 
     /**
