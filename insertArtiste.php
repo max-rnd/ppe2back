@@ -1,20 +1,18 @@
 <?php
 require_once "vendor/autoload.php";
-//include_once "metier/artiste.php";
-//include_once "modele/initPdo.php";
-include_once "modele/daoArtiste.php";
+include_once "modele/initPdo.php";
 
 // Données
 
-$nom = "Gami";
-$prenom = "Yatosu";
-$portait = "bg.jpg";
-$resuBio = "Un 10E";
-$bio = "Big boss du game";
+$nom = "nomArt";
+$prenom = "prenomArt";
+$portait = "portArt.jpg";
+$resuBio = "Résumé de bio d'un artiste";
+$bio = "Biographie d'un artiste";
 
 // -------
 
-$artiste = new \metier\artiste();
+$artiste = new \metier\artiste($dbh,$ObjLog);
 $artiste->setNom($nom);
 $artiste->setPrenom($prenom);
 $artiste->setPortait($portait);

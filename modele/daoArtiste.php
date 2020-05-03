@@ -73,6 +73,26 @@ class daoArtiste
         }
         return $resultat;
     }
+    public function getAllArtiste() : array
+    {
+        $resultat[0]=null;
+        try {
+            $sql = "select * from artiste";
+            $sth = $this->pdo->query($sql);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
+            $sth->execute();
+            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
+        }
+        catch (\PDOException $e){
+            $this->objLog->insertErrException($e);
+        }
+        if ($resultat[0] == null)
+        {
+            $resultat[0] = new artiste();
+            $resultat[0]->setNom("NULL");
+        }
+        return $resultat;
+    }
     public function insert(artiste $lartiste){
         try {
             $tab['nom'] = $lartiste->getNom();
