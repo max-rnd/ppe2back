@@ -395,3 +395,7 @@
 #1 /Users/max/Desktop/ppe2back/getArtiste.php(6): include_once('/Users/max/Desk...')
 #2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
 #3 {main}
+[03.05.2020 06:03:39] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'artiste' cannot be null
+#0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(123): PDOStatement->execute(Array)
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(21): modele\daoExposition->insert(Object(metier\exposition))
+#2 {main}

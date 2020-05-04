@@ -20,7 +20,7 @@ $app->get("/expo", function (Request $request, Response $response, $args) use ($
         ->withStatus(200);
 });
 
-$app->post('/expos', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog)  {
+$app->post('/expo', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog)  {
     $dao = new \modele\daoExposition($dbh,$ObjLog);
     $allPostPutVars= $request->getParsedBody();
     $lexpo = new \metier\exposition();
@@ -38,7 +38,7 @@ $app->post('/expos', function (Request $request, Response $response, array $args
         ->withStatus(200);
 });
 
-$app->get('/expos/All', function (Request $request, Response $response, $args) use ($dbh,$ObjLog) {
+$app->get('/expo/All', function (Request $request, Response $response, $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoExposition($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getAllExpo()));
     return $response
@@ -47,9 +47,18 @@ $app->get('/expos/All', function (Request $request, Response $response, $args) u
         ->withStatus(200);
 });
 
-$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/artiste/expo/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoArtiste($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
+    return $response
+        ->withHeader('Access-Control-Allow-Origin', '*')
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus(200);
+});
+
+$app->get('/artiste/All', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+    $dao = new \modele\daoArtiste($dbh,$ObjLog);
+    $response->getBody()->write(json_encode($dao->getAllArtiste()));
     return $response
         ->withHeader('Access-Control-Allow-Origin', '*')
         ->withHeader('Content-Type', 'application/json')

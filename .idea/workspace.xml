@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getAllArtiste.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertArtiste.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/modele/daoArtiste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertExpo.php" beforeDir="false" afterPath="$PROJECT_DIR$/insertExpo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,8 @@
       <workItem from="1588295192969" duration="3292000" />
       <workItem from="1588424109644" duration="2542000" />
       <workItem from="1588434283157" duration="1446000" />
-      <workItem from="1588521717392" duration="3340000" />
+      <workItem from="1588521717392" duration="4837000" />
+      <workItem from="1588572351814" duration="233000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -202,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588429461278</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ajout_getAllArtiste_in_dao">
+      <created>1588526592065</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588526592065</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,7 +230,8 @@
     <MESSAGE value="app-exposEnCours_OK" />
     <MESSAGE value="dao_OK" />
     <MESSAGE value="correction_expo_artiste" />
-    <option name="LAST_COMMIT_MESSAGE" value="correction_expo_artiste" />
+    <MESSAGE value="ajout_getAllArtiste_in_dao" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout_getAllArtiste_in_dao" />
   </component>
   <component name="WindowStateProjectService">
     <state x="284" y="-943" key="#CLI_Interpreters" timestamp="1588524344139">
@@ -260,38 +268,38 @@
     </state>
     <state x="249" y="-861" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587131253148" />
     <state x="378" y="162" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.800@0.0.1280.800" timestamp="1588216061997" />
-    <state x="-191" y="-993" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1588429460914">
+    <state x="-191" y="-993" width="1280" height="800" key="CommitChangelistDialog2" timestamp="1588526591802">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588429460914" />
+    <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588526591802" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1588295234251" />
     <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey" timestamp="1588150264570">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
     <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150264570" />
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
-    <state width="1238" height="176" key="GridCell.Tab.0.bottom" timestamp="1588434237768">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom" timestamp="1588532597100">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="176" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588429478036" />
+    <state width="1878" height="254" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597100" />
     <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981142" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1588434237768" />
-    <state width="1238" height="176" key="GridCell.Tab.0.center" timestamp="1588434237766">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="254" key="GridCell.Tab.0.center" timestamp="1588532597098">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="176" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588429478033" />
+    <state width="1878" height="254" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597098" />
     <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981140" />
     <state width="1238" height="176" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
-    <state width="1238" height="176" key="GridCell.Tab.0.left" timestamp="1588434237766">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="254" key="GridCell.Tab.0.left" timestamp="1588532597097">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="176" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588429478031" />
+    <state width="1878" height="254" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597097" />
     <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981139" />
     <state width="1238" height="176" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
-    <state width="1238" height="176" key="GridCell.Tab.0.right" timestamp="1588434237767">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state width="1878" height="254" key="GridCell.Tab.0.right" timestamp="1588532597099">
+      <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
-    <state width="1878" height="176" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588429478034" />
+    <state width="1878" height="254" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597099" />
     <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981141" />
     <state width="1238" height="176" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1588434237767" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1588524527822">
