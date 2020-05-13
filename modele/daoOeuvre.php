@@ -74,6 +74,7 @@ class daoOeuvre
         return $resultat;
     }
     public function insert(oeuvre $loeuvre){
+        $ok = true;
         try {
             $tab['nom'] = $loeuvre->getNom();
             $tab['date'] = $loeuvre->getDate();
@@ -86,6 +87,8 @@ class daoOeuvre
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
+            $ok = false;
         }
+        return $ok;
     }
 }

@@ -110,7 +110,8 @@ class daoExposition
         return $resultat;
     }
 
-    public function insert(exposition $lexpo){
+    public function insert(exposition $lexpo) : bool {
+        $ok = true;
         try {
             $tab['titre'] = $lexpo->getTitre();
             $tab['noteComm'] = $lexpo->getNoteComm();
@@ -124,6 +125,8 @@ class daoExposition
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
+            $ok = false;
         }
+        return $ok;
     }
 }

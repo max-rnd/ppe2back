@@ -93,7 +93,8 @@ class daoArtiste
         }
         return $resultat;
     }
-    public function insert(artiste $lartiste){
+    public function insert(artiste $lartiste) : bool {
+        $ok = true;
         try {
             $tab['nom'] = $lartiste->getNom();
             $tab['prenom'] = $lartiste->getPrenom();
@@ -107,6 +108,8 @@ class daoArtiste
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
+            $ok = false;
         }
+        return $ok;
     }
 }

@@ -73,7 +73,8 @@ class daoFilm
         }
         return $resultat;
     }
-    public function insert(film $lefilm){
+    public function insert(film $lefilm) : bool {
+        $ok = true;
         try {
             $tab['nom'] = $lefilm->getNom();
             $tab['description'] = $lefilm->getDescription();
@@ -86,6 +87,8 @@ class daoFilm
         }
         catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
+            $ok = false;
         }
+        return $ok;
     }
 }

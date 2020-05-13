@@ -1,4 +1,5 @@
 <?php
+use DI\Container;
 use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
@@ -6,7 +7,26 @@ use Slim\Factory\AppFactory;
 require_once "vendor/autoload.php";
 include_once "modele/initPdo.php";
 
+$container = new Container();
+$container->set('upload_directory', __DIR__ . '/uploads');
+
+AppFactory::setContainer($container);
 $app = AppFactory::create();
+
+// Default page
+$app->get("/", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
+    return $response;
+});
+
+// Header
+function addHeader(Response $response) : Response {
+    return $response
+        ->withHeader('Access-Control-Allow-Origin', '*')
+        ->withHeader('Content-Type', 'application/json')
+        ->withStatus(200);
+}
+
+// GET
 
 $app->get("/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
     $dao = new \modele\daoExposition($dbh, $ObjLog);
@@ -14,73 +34,70 @@ $app->get("/expo", function (Request $request, Response $response, $args) use ($
     if ($expo->getTitre() == "NULL")
         $expo = $dao->getProchaineExpo();
     $response->getBody()->write(json_encode($expo));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
+    return addHeader($response);
 });
 
-$app->post('/expo', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog)  {
-    $dao = new \modele\daoExposition($dbh,$ObjLog);
-    $allPostPutVars= $request->getParsedBody();
-    $lexpo = new \metier\exposition();
-
-    $lexpo->setNom($allPostPutVars["Nom"]);
-    $lexpo->setDateDebut(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateDebut"]));
-    $lexpo->setDateFin(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateFin"]));
-    $lexpo->setIdArtiste(1);            // en attendant de gérer les artistes
-    $lexpo->setId( $dao->insert($lexpo));       // si l'id =0 alors l'insertion ne s'est pas faite
-
-    $response->getBody()->write(json_encode($lexpo));   // on retourne l'enregistrement
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
-});
-
-$app->get('/expo/All', function (Request $request, Response $response, $args) use ($dbh,$ObjLog) {
-    $dao = new \modele\daoExposition($dbh,$ObjLog);
-    $response->getBody()->write(json_encode($dao->getAllExpo()));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
-});
-
-$app->get('/artiste/expo/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoArtiste($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
-});
-
-$app->get('/artiste/All', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
-    $dao = new \modele\daoArtiste($dbh,$ObjLog);
-    $response->getBody()->write(json_encode($dao->getAllArtiste()));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
+    return addHeader($response);
 });
 
 $app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoOeuvre($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getOeuvres($args['id'])));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
+    return addHeader($response);
 });
 
 $app->get('/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoFilm($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getFilms($args['id'])));
-    return $response
-        ->withHeader('Access-Control-Allow-Origin', '*')
-        ->withHeader('Content-Type', 'application/json')
-        ->withStatus(200);
+    return addHeader($response);
 });
+
+
+// POST
+
+// titre ; noteComm ; dateDebut ; dateFin ; idArtiste
+$app->post('/expo/new', function (Request $request, Response $response, $args) use ($dbh,$ObjLog)  {
+    $dao = new modele\daoExposition($dbh,$ObjLog);
+    $allPostPutVars= $request->getParsedBody();
+    $lexpo = new \metier\exposition();
+
+    $lexpo->setTitre($allPostPutVars['titre']);
+    $lexpo->setNoteComm($allPostPutVars['noteComm']);
+    $lexpo->setDateDebut(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateDebut"]));
+    $lexpo->setDateFin(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateFin"]));
+    $lexpo->setArtiste($allPostPutVars['idArtiste']);
+    $dao->insert($lexpo);
+
+    $response->getBody()->write(json_encode($lexpo));
+    return addHeader($response);
+});
+
+// Modele etd4 (avec fichier)
+$app->post('/artiste/new', function (Request $request, Response $response, $args) use ($dbh,$ObjLog)  {
+    $dao = new modele\daoArtiste($dbh,$ObjLog);      //$dbh est initialisé par initPdo.php
+    // on récupère les variables passées en post
+    $allPostPutVars= $request->getParsedBody();
+    $directory = $this->get('upload_directory');
+    $uploadedFiles = $request->getUploadedFiles();
+    $uploadedFile = $uploadedFiles['nomAffiche'];
+    $filename = $uploadedFile->getClientFilename();
+    if ($uploadedFile->getError() === UPLOAD_ERR_OK) {
+        $uploadedFile->moveTo($directory. DIRECTORY_SEPARATOR. $filename);
+    }
+    $lartiste = new \metier\artiste();
+
+    $lartiste->setNom($allPostPutVars["Nom"]);
+    $lartiste->setPortait($filename);
+    // $lartiste->setIdArtiste(1);            // en attendant de gérer les artistes
+    //$lartiste->setId( $dao->insert($lexpo));       // si l'id =0 alors l'insertion ne s'est pas faite
+    $dao->insert($lartiste);
+
+    $response->getBody()->write(json_encode($lartiste));   // on retourne l'enregistrement
+    return addHeader($response);
+});
+
 
 $app->run();
