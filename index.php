@@ -28,7 +28,7 @@ function addHeader(Response $response) : Response {
 
 // GET
 
-$app->get("/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
+$app->get("/get/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
     $dao = new \modele\daoExposition($dbh, $ObjLog);
     $expo = $dao->getExpoEnCours();
     if ($expo->getTitre() == "NULL")
@@ -37,19 +37,19 @@ $app->get("/expo", function (Request $request, Response $response, $args) use ($
     return addHeader($response);
 });
 
-$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/get/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoArtiste($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/get/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoOeuvre($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getOeuvres($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/get/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoFilm($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getFilms($args['id'])));
     return addHeader($response);
@@ -71,7 +71,12 @@ $app->post('/expo/new', function (Request $request, Response $response, $args) u
     $lexpo->setArtiste($allPostPutVars['idArtiste']);
     $dao->insert($lexpo);
 
-    $response->getBody()->write(json_encode($lexpo));
+    if ($dao->insert($lexpo)) {
+        $response->getBody()->write(json_encode($lexpo));
+    }
+    else {
+        $response->getBody()->write("fail");
+    }
     return addHeader($response);
 });
 
@@ -93,9 +98,7 @@ $app->post('/artiste/new', function (Request $request, Response $response, $args
     $lartiste->setPortait($filename);
     // $lartiste->setIdArtiste(1);            // en attendant de gérer les artistes
     //$lartiste->setId( $dao->insert($lexpo));       // si l'id =0 alors l'insertion ne s'est pas faite
-    $dao->insert($lartiste);
 
-    $response->getBody()->write(json_encode($lartiste));   // on retourne l'enregistrement
     return addHeader($response);
 });
 
