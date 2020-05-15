@@ -28,7 +28,7 @@ function addHeader(Response $response) : Response {
 
 // GET
 
-$app->get("/get/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
+$app->get("/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
     $dao = new \modele\daoExposition($dbh, $ObjLog);
     $expo = $dao->getExpoEnCours();
     if ($expo->getTitre() == "NULL")
@@ -37,19 +37,26 @@ $app->get("/get/expo", function (Request $request, Response $response, $args) us
     return addHeader($response);
 });
 
-$app->get('/get/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get("/expo/all", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
+    $dao = new \modele\daoExposition($dbh, $ObjLog);
+    $expo = $dao->getAllExpo();
+    $response->getBody()->write(json_encode($expo));
+    return addHeader($response);
+});
+
+$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoArtiste($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/get/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoOeuvre($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getOeuvres($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/get/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
+$app->get('/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
     $dao = new \modele\daoFilm($dbh,$ObjLog);
     $response->getBody()->write(json_encode($dao->getFilms($args['id'])));
     return addHeader($response);
