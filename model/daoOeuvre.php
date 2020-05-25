@@ -1,63 +1,17 @@
 <?php
 
 
-namespace modele;
+namespace model;
 
 use metier\oeuvre;
 
-class daoOeuvre
+class daoOeuvre extends initPdo
 {
-    protected $pdo;
-    protected $objLog;
-
-    /**
-     * daoArtiste constructor.
-     * @param $pdo
-     * @param $objLog
-     */
-    public function __construct(\PDO $pdo, $objLog)
-    {
-        $this->pdo = $pdo;
-        $this->objLog = $objLog;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPdo()
-    {
-        return $this->pdo;
-    }
-
-    /**
-     * @param mixed $pdo
-     */
-    public function setPdo($pdo): void
-    {
-        $this->pdo = $pdo;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getObjLog()
-    {
-        return $this->objLog;
-    }
-
-    /**
-     * @param mixed $objLog
-     */
-    public function setObjLog($objLog): void
-    {
-        $this->objLog = $objLog;
-    }
-
-    public function getOeuvres(int $idArtiste) : array
+    public function getOeuvres(int $idOeuvre) : array
     {
         $resultat[0]=null;
         try {
-            $sql = "select * from oeuvre where artiste = $idArtiste";
+            $sql = "select * from oeuvre where artiste = $idOeuvre";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, oeuvre::class);
             $sth->execute();

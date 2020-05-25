@@ -1,58 +1,12 @@
 <?php
 
 
-namespace modele;
+namespace model;
 
 use metier\film;
 
-class daoFilm
+class daoFilm extends initPdo
 {
-    protected $pdo;
-    protected $objLog;
-
-    /**
-     * daoFilm constructor.
-     * @param $pdo
-     * @param $objLog
-     */
-    public function __construct($pdo, $objLog)
-    {
-        $this->pdo = $pdo;
-        $this->objLog = $objLog;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPdo()
-    {
-        return $this->pdo;
-    }
-
-    /**
-     * @param mixed $pdo
-     */
-    public function setPdo($pdo): void
-    {
-        $this->pdo = $pdo;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getObjLog()
-    {
-        return $this->objLog;
-    }
-
-    /**
-     * @param mixed $objLog
-     */
-    public function setObjLog($objLog): void
-    {
-        $this->objLog = $objLog;
-    }
-
     public function getFilms(int $idArtiste) : array
     {
         $resultat[0]=null;

@@ -4,8 +4,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\Factory\AppFactory;
 
-require_once "vendor/autoload.php";
-include_once "modele/initPdo.php";
+require_once __DIR__."/vendor/autoload.php";
 
 $container = new Container();
 $container->set('upload_directory', __DIR__ . '/uploads');
@@ -14,7 +13,7 @@ AppFactory::setContainer($container);
 $app = AppFactory::create();
 
 // Default page
-$app->get("/", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
+$app->get("/", function (Request $request, Response $response, $args) {
     return $response;
 });
 
@@ -28,8 +27,8 @@ function addHeader(Response $response) : Response {
 
 // GET
 
-$app->get("/expo", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
-    $dao = new \modele\daoExposition($dbh, $ObjLog);
+$app->get("/expo", function (Request $request, Response $response, $args) {
+    $dao = new \model\daoExposition();
     $expo = $dao->getExpoEnCours();
     if ($expo->getTitre() == "NULL")
         $expo = $dao->getProchaineExpo();
@@ -37,27 +36,27 @@ $app->get("/expo", function (Request $request, Response $response, $args) use ($
     return addHeader($response);
 });
 
-$app->get("/expo/all", function (Request $request, Response $response, $args) use ($dbh, $ObjLog) {
-    $dao = new \modele\daoExposition($dbh, $ObjLog);
+$app->get("/expo/all", function (Request $request, Response $response, $args) {
+    $dao = new \model\daoExposition();
     $expo = $dao->getAllExpo();
     $response->getBody()->write(json_encode($expo));
     return addHeader($response);
 });
 
-$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
-    $dao = new \modele\daoArtiste($dbh,$ObjLog);
+$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) {
+    $dao = new \model\daoArtiste();
     $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
-    $dao = new \modele\daoOeuvre($dbh,$ObjLog);
+$app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) {
+    $dao = new \model\daoOeuvre();
     $response->getBody()->write(json_encode($dao->getOeuvres($args['id'])));
     return addHeader($response);
 });
 
-$app->get('/film/{id}', function (Request $request, Response $response, array $args) use ($dbh,$ObjLog) {
-    $dao = new \modele\daoFilm($dbh,$ObjLog);
+$app->get('/film/{id}', function (Request $request, Response $response, array $args) {
+    $dao = new \model\daoFilm();
     $response->getBody()->write(json_encode($dao->getFilms($args['id'])));
     return addHeader($response);
 });
@@ -66,8 +65,8 @@ $app->get('/film/{id}', function (Request $request, Response $response, array $a
 // POST
 
 // titre ; noteComm ; dateDebut ; dateFin ; idArtiste
-$app->post('/expo/new', function (Request $request, Response $response, $args) use ($dbh,$ObjLog)  {
-    $dao = new modele\daoExposition($dbh,$ObjLog);
+$app->post('/expo/new', function (Request $request, Response $response, $args) {
+    $dao = new model\daoExposition();
     $allPostPutVars= $request->getParsedBody();
     $lexpo = new \metier\exposition();
 
@@ -87,9 +86,9 @@ $app->post('/expo/new', function (Request $request, Response $response, $args) u
     return addHeader($response);
 });
 
-// Modele etd4 (avec fichier)
-$app->post('/artiste/new', function (Request $request, Response $response, $args) use ($dbh,$ObjLog)  {
-    $dao = new modele\daoArtiste($dbh,$ObjLog);      //$dbh est initialisé par initPdo.php
+// model etd4 (avec fichier)
+$app->post('/artiste/new', function (Request $request, Response $response, $args) {
+    $dao = new model\daoArtiste();
     // on récupère les variables passées en post
     $allPostPutVars= $request->getParsedBody();
     $directory = $this->get('upload_directory');

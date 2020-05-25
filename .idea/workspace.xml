@@ -20,8 +20,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/daoArtiste.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/daoExposition.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/daoFilm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/daoOeuvre.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/initPdo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07221a1-51f1-4552-bb16-c76cce5d152c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07221a1-51f1-4552-bb16-c76cce5d152c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getAllArtiste.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getAllExpo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getArtiste.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getExpoEnCours.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertArtiste.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/insertExpo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metier/exposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/exposition.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metier/film.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/film.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/metier/oeuvre.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/oeuvre.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/const.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/daoFilm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/daoOeuvre.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modele/initPdo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ppe2_bdd.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +119,18 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ppe2backOffice" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="dumpAutoload D:/dev/ppe2back/composer.json" value="--no-interaction --ansi --verbose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -156,7 +198,14 @@
       <workItem from="1589459721077" duration="153000" />
       <workItem from="1589459888969" duration="2000" />
       <workItem from="1589465929685" duration="21000" />
-      <workItem from="1589541857190" duration="1843000" />
+      <workItem from="1589541857190" duration="3613000" />
+      <workItem from="1589576076649" duration="1794000" />
+      <workItem from="1589579168684" duration="1578000" />
+      <workItem from="1589627908778" duration="1688000" />
+      <workItem from="1589656243471" duration="261000" />
+      <workItem from="1589657869900" duration="805000" />
+      <workItem from="1590413829136" duration="65000" />
+      <workItem from="1590414054494" duration="2925000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -293,30 +342,37 @@
     <option name="LAST_COMMIT_MESSAGE" value="ajout_getAllArtiste_in_dao" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="482" y="105" key="#CLI_Interpreters" timestamp="1589232251658">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2523" y="138" width="828" height="684" key="#CLI_Interpreters" timestamp="1589579616658">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="284" y="-943" key="#CLI_Interpreters/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588524344139" />
     <state x="482" y="105" key="#CLI_Interpreters/0.0.1536.824@0.0.1536.824" timestamp="1589232251658" />
-    <state x="40" y="0" width="562" height="611" key="#PHP" timestamp="1589232255418">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2523" y="138" width="828" height="684" key="#CLI_Interpreters/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589579616658" />
+    <state x="1970" y="0" width="562" height="611" key="#PHP" timestamp="1589579292874">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-268" y="-1080" key="#PHP/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588524347361" />
     <state x="-318" y="-1080" key="#PHP/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588522002598" />
     <state x="0" y="0" width="619" height="800" key="#PHP/0.0.1280.800@0.0.1280.800" timestamp="1586104046930" />
     <state x="40" y="0" width="562" height="611" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1589232255418" />
+    <state x="1970" y="0" key="#PHP/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589579292874" />
+    <state x="440" y="94" key="#Project_Structure" timestamp="1589656394078">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589656394078" />
     <state x="348" y="-838" key="#Unnamed" timestamp="1588524349260">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
     <state x="348" y="-838" key="#Unnamed/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588524349260" />
     <state x="348" y="-838" key="#Unnamed/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588522008513" />
-    <state x="156" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589545598999">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2343" y="138" width="804" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589580692970">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="156" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589545598999" />
     <state x="-162" y="-995" key="#com.intellij.execution.impl.EditConfigurationsDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588524435396" />
     <state x="104" y="63" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1586104249189" />
     <state x="125" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1589267646027" />
+    <state x="2343" y="138" width="804" height="677" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580692970" />
     <state x="639" y="261" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589363199643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -341,49 +397,62 @@
     </state>
     <state x="-191" y="-993" key="CommitChangelistDialog2/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588526591802" />
     <state x="0" y="0" width="1280" height="800" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1588295234251" />
+    <state x="771" y="394" key="ComposerDumpAutoloadDialog" timestamp="1590415376449">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="394" key="ComposerDumpAutoloadDialog/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415376449" />
     <state x="487" y="300" width="408" height="238" key="ComposerInitDialogKey" timestamp="1589266003822">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150264570" />
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
     <state x="487" y="300" width="408" height="238" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1589266003822" />
-    <state x="853" y="259" key="FileChooserDialogImpl" timestamp="1589544868716">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2773" y="269" width="428" height="484" key="FileChooserDialogImpl" timestamp="1589579609941">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="853" y="259" key="FileChooserDialogImpl/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589544868716" />
     <state x="682" y="205" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589232248444" />
-    <state width="1876" height="169" key="GridCell.Tab.0.bottom" timestamp="1589388318382">
+    <state x="2773" y="269" width="428" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589579609941" />
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1590415384106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="169" key="GridCell.Tab.0.bottom/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589388318382" />
+    <state width="1876" height="169" key="GridCell.Tab.0.bottom/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
     <state width="1878" height="254" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597100" />
     <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981142" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1588434237768" />
     <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1876" height="169" key="GridCell.Tab.0.center" timestamp="1589388318381">
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384106" />
+    <state width="1874" height="167" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
+    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1590415384105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="169" key="GridCell.Tab.0.center/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589388318381" />
+    <state width="1876" height="169" key="GridCell.Tab.0.center/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
     <state width="1878" height="254" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597098" />
     <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981140" />
     <state width="1238" height="176" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
     <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1876" height="169" key="GridCell.Tab.0.left" timestamp="1589388318381">
+    <state width="1877" height="169" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1874" height="167" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
+    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1590415384105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="169" key="GridCell.Tab.0.left/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589388318381" />
+    <state width="1876" height="169" key="GridCell.Tab.0.left/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
     <state width="1878" height="254" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597097" />
     <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981139" />
     <state width="1238" height="176" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
     <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1876" height="169" key="GridCell.Tab.0.right" timestamp="1589388318382">
+    <state width="1877" height="169" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1874" height="167" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1590415384105">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="169" key="GridCell.Tab.0.right/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589388318382" />
+    <state width="1876" height="169" key="GridCell.Tab.0.right/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
     <state width="1878" height="254" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588532597099" />
     <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981141" />
     <state width="1238" height="176" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1588434237767" />
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1874" height="167" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1588524527822">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
@@ -398,21 +467,26 @@
     </state>
     <state x="339" y="-767" key="NewPhpClassDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586524553092" />
     <state x="438" y="232" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1588214965183" />
-    <state x="696" y="434" key="NewPhpFileDialog" timestamp="1589363261780">
+    <state x="696" y="434" key="NewPhpFileDialog" timestamp="1589656420371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="696" y="434" key="NewPhpFileDialog/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589363261780" />
+    <state x="696" y="434" key="NewPhpFileDialog/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589656420371" />
     <state x="378" y="-629" key="NewPhpFileDialog/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1587126759137" />
     <state x="464" y="334" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1586456013244" />
-    <state x="374" y="161" width="981" height="707" key="SettingsEditor" timestamp="1589376218573">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2294" y="167" width="981" height="707" key="SettingsEditor" timestamp="1589580724892">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="374" y="161" key="SettingsEditor/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589376218573" />
     <state x="224" y="56" width="981" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1589220857184" />
+    <state x="2294" y="167" key="SettingsEditor/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580724892" />
     <state width="500" height="445" key="SwitcherDM" timestamp="1586527891364">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
     <state width="500" height="445" key="SwitcherDM/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1586527891364" />
+    <state x="2781" y="398" width="191" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1589579828291">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2781" y="398" width="191" height="248" key="com.intellij.database.actions.DdlActions$CreateObject$1/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589579828291" />
     <state x="443" y="-907" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1586521205594">
       <screen x="-318" y="-1080" width="1920" height="1080" />
     </state>
@@ -425,10 +499,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="668" y="82" width="583" height="876" key="find.popup/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589365415374" />
-    <state x="342" y="104" key="new project wizard" timestamp="1589465949930">
+    <state x="342" y="104" key="new project wizard" timestamp="1589656498246">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="342" y="104" key="new project wizard/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589465949930" />
+    <state x="342" y="104" key="new project wizard/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589656498246" />
     <state x="402" y="29" key="refactoring.ChangeSignatureDialog" timestamp="1586105840596">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -441,5 +515,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="173" width="670" height="676" key="search.everywhere.popup/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589371508387" />
+    <state x="682" y="430" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1590414432794">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="682" y="430" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590414432794" />
   </component>
 </project>

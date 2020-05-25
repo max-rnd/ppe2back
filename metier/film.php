@@ -13,23 +13,6 @@ class film
     protected $artiste;
 
     /**
-     * film constructor.
-     * @param $id
-     * @param $nom
-     * @param $description
-     * @param $image
-     * @param $artiste
-     */
-    public function __construct($id, $nom, $description, $image, $artiste)
-    {
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->description = $description;
-        $this->image = $image;
-        $this->artiste = $artiste;
-    }
-
-    /**
      * @return mixed
      */
     public function getId()

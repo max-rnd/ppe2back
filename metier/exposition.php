@@ -72,7 +72,7 @@ class exposition implements \JsonSerializable
     /**
      * @param null $dateDebut
      */
-    public function setDateDebut($dateDebut): void
+    public function setDateDebut(\DateTime $dateDebut): void
     {
         $this->dateDebut = $dateDebut;
     }
@@ -88,7 +88,7 @@ class exposition implements \JsonSerializable
     /**
      * @param null $dateFin
      */
-    public function setDateFin($dateFin): void
+    public function setDateFin(\DateTime $dateFin): void
     {
         $this->dateFin = $dateFin;
     }
@@ -116,10 +116,9 @@ class exposition implements \JsonSerializable
     public function jsonSerialize()
     {
         // TODO: Implement jsonSerialize() method.
-        /*
-        $json = get_object_vars($this);
-        $json["dateDebut"] = $this->dateDebut->format("d/m/YY");
-        $json["dateFin"] = $this->dateFin->format("d/m/YY"); */
-        return get_object_vars($this);
+        $tab = get_object_vars($this);
+        $tab["dateDebut"] = $this->dateDebut->format("d/m/Y");
+        $tab["dateFin"] = $this->dateFin->format("d/m/Y");
+        return $tab;
     }
 }

@@ -116,7 +116,7 @@ class ComposerStaticInit9f77ecbd799f46cd02a48f107fab2e66
         ),
         'm' => 
         array (
-            'modele' => 
+            'model' => 
             array (
                 0 => __DIR__ . '/../..' . '/',
             ),

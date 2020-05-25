@@ -1,78 +1,12 @@
 <?php
 
 
-namespace modele;
+namespace model;
 
 use metier\artiste;
 
-class daoArtiste
+class daoArtiste extends initPdo
 {
-    protected $pdo;
-    protected $objLog;
-
-    /**
-     * daoArtiste constructor.
-     * @param $pdo
-     * @param $objLog
-     */
-    public function __construct(\PDO $pdo, $objLog)
-    {
-        $this->pdo = $pdo;
-        $this->objLog = $objLog;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPdo()
-    {
-        return $this->pdo;
-    }
-
-    /**
-     * @param mixed $pdo
-     */
-    public function setPdo($pdo): void
-    {
-        $this->pdo = $pdo;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getObjLog()
-    {
-        return $this->objLog;
-    }
-
-    /**
-     * @param mixed $objLog
-     */
-    public function setObjLog($objLog): void
-    {
-        $this->objLog = $objLog;
-    }
-
-    public function getArtiste(int $id) : artiste
-    {
-        $resultat=null;
-        try {
-            $sql = "select * from artiste where id = $id";
-            $sth = $this->pdo->query($sql);
-            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
-            $sth->execute();
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS);
-        }
-        catch (\PDOException $e){
-            $this->objLog->insertErrException($e);
-        }
-        if ($resultat == null)
-        {
-            $resultat = new artiste();
-            $resultat->setNom("NULL");
-        }
-        return $resultat;
-    }
     public function getAllArtiste() : array
     {
         $resultat[0]=null;
@@ -81,7 +15,7 @@ class daoArtiste
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
             $sth->execute();
-            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -90,6 +24,26 @@ class daoArtiste
         {
             $resultat[0] = new artiste();
             $resultat[0]->setNom("NULL");
+        }
+        return $resultat;
+    }
+    public function getArtiste(int $id) : artiste
+    {
+        $resultat=null;
+        try {
+            $sql = "select * from artiste where id = $id";
+            $sth = $this->pdo->query($sql);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, artiste::class);
+            $sth->execute();
+            $resultat = $sth->fetch();
+        }
+        catch (\PDOException $e){
+            $this->objLog->insertErrException($e);
+        }
+        if ($resultat == null)
+        {
+            $resultat = new artiste();
+            $resultat->setNom("NULL");
         }
         return $resultat;
     }

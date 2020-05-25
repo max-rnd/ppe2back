@@ -13,23 +13,6 @@ class oeuvre implements \JsonSerializable
     protected $image;
 
     /**
-     * oeuvre constructor.
-     * @param $id
-     * @param $nom
-     * @param $artiste
-     * @param $date
-     * @param $image
-     */
-    public function __construct($id, $nom, $artiste, $date, $image)
-    {
-        $this->id = $id;
-        $this->nom = $nom;
-        $this->artiste = $artiste;
-        $this->date = $date;
-        $this->image = $image;
-    }
-
-    /**
      * @return mixed
      */
     public function getId()

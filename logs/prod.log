@@ -2,35 +2,35 @@
 #0 /Users/max/Desktop/ppe2back/modele/initPdo.php(9): PDO->__construct('mysql:host=192....', 'Xeb', 'azerty')
 #1 /Users/max/Desktop/ppe2back/getAllCours.php(6): include_once('/Users/max/Desk...')
 #2 {main}
-[10.04.2020 12:15:17] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:15:17] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:16:59] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:16:59] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:20:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:20:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:23:13] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:23:13] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:23:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:23:55] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:24:27] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:24:27] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:26:21] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:26:21] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
-[10.04.2020 12:26:46] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.exposition' doesn't exist
+[10.04.2020 12:26:46] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe2.view.exposition' doesn't exist
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(79): PDO->query('select * from e...')
 #1 /Users/max/Desktop/ppe2back/getExpoEnCours.php(11): modele\daoExposition->getExpoEnCours()
 #2 {main}
@@ -217,17 +217,17 @@
 #3 {main}
 [17.04.2020 12:49:48] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
-#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\view.exposition))
 #2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
 #3 {main}
 [17.04.2020 12:50:24] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
-#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\view.exposition))
 #2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
 #3 {main}
 [17.04.2020 12:51:28] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'nom' in 'field list'
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(121): PDOStatement->execute(Array)
-#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\exposition))
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(22): modele\daoExposition->insert(Object(metier\view.exposition))
 #2 /Users/max/Desktop/ppe2back/index.php(3): include_once('/Users/max/Desk...')
 #3 {main}
 [17.04.2020 12:54:02] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ppe.Exposition' doesn't exist
@@ -397,7 +397,7 @@
 #3 {main}
 [03.05.2020 06:03:39] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'artiste' cannot be null
 #0 /Users/max/Desktop/ppe2back/modele/daoExposition.php(123): PDOStatement->execute(Array)
-#1 /Users/max/Desktop/ppe2back/insertExpo.php(21): modele\daoExposition->insert(Object(metier\exposition))
+#1 /Users/max/Desktop/ppe2back/insertExpo.php(21): modele\daoExposition->insert(Object(metier\view.exposition))
 #2 {main}
 [12.05.2020 07:09:42] SQLSTATE[HY000] [1049] Base 'ppe' inconnue
 #0 D:\dev\ppe2back\modele\initPdo.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
@@ -413,3 +413,35 @@
 #0 D:\dev\ppe2back\modele\initPdo.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
 #1 D:\dev\ppe2back\index.php(7): include_once('D:\\dev\\ppe2back...')
 #2 {main}
+[15.05.2020 09:53:43] could not find driver
+#0 /run/media/max/DATA/dev/ppe2back/modele/initPdo.php(9): PDO->__construct()
+#1 /run/media/max/DATA/dev/ppe2back/index.php(8): include_once('/run/media/max/...')
+#2 {main}
+[25.05.2020 01:37:31] SQLSTATE[42S02]: Base table or view not found: 1146 La table 'view.exposition' n'existe pas
+#0 D:\dev\ppe2back\modele\daoExposition.php(78): PDO->query('select * from v...')
+#1 D:\dev\ppe2back\index.php(34): modele\daoExposition->getExpoEnCours()
+#2 D:\dev\ppe2back\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(43): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#3 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\Route.php(381): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#4 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#5 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\Route.php(341): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#7 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\RouteRunner.php(84): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#8 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#9 D:\dev\ppe2back\vendor\slim\slim\Slim\App.php(211): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 D:\dev\ppe2back\vendor\slim\slim\Slim\App.php(195): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 D:\dev\ppe2back\index.php(114): Slim\App->run()
+#12 {main}
+[25.05.2020 01:37:31] SQLSTATE[42S02]: Base table or view not found: 1146 La table 'view.exposition' n'existe pas
+#0 D:\dev\ppe2back\modele\daoExposition.php(99): PDO->query('select * from v...')
+#1 D:\dev\ppe2back\index.php(36): modele\daoExposition->getProchaineExpo()
+#2 D:\dev\ppe2back\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(43): Closure->{closure}(Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#3 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\Route.php(381): Slim\Handlers\Strategies\RequestResponse->__invoke(Object(Closure), Object(Slim\Psr7\Request), Object(Slim\Psr7\Response), Array)
+#4 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\Routing\Route->handle(Object(Slim\Psr7\Request))
+#5 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#6 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\Route.php(341): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#7 D:\dev\ppe2back\vendor\slim\slim\Slim\Routing\RouteRunner.php(84): Slim\Routing\Route->run(Object(Slim\Psr7\Request))
+#8 D:\dev\ppe2back\vendor\slim\slim\Slim\MiddlewareDispatcher.php(81): Slim\Routing\RouteRunner->handle(Object(Slim\Psr7\Request))
+#9 D:\dev\ppe2back\vendor\slim\slim\Slim\App.php(211): Slim\MiddlewareDispatcher->handle(Object(Slim\Psr7\Request))
+#10 D:\dev\ppe2back\vendor\slim\slim\Slim\App.php(195): Slim\App->handle(Object(Slim\Psr7\Request))
+#11 D:\dev\ppe2back\index.php(114): Slim\App->run()
+#12 {main}
