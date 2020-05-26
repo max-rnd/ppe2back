@@ -9,7 +9,7 @@ class daoArtiste extends initPdo
 {
     public function getAllArtiste() : array
     {
-        $resultat[0]=null;
+        $resultat[0] = null;
         try {
             $sql = "select * from artiste";
             $sth = $this->pdo->query($sql);

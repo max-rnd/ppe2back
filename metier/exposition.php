@@ -116,9 +116,9 @@ class exposition implements \JsonSerializable
     public function jsonSerialize()
     {
         // TODO: Implement jsonSerialize() method.
-        $tab = get_object_vars($this);
-        $tab["dateDebut"] = $this->dateDebut->format("d/m/Y");
-        $tab["dateFin"] = $this->dateFin->format("d/m/Y");
-        return $tab;
+        // $tab = get_object_vars($this);
+        // $tab["dateDebut"] = $this->dateDebut->format("d/m/Y");
+        // $tab["dateFin"] = $this->dateFin->format("d/m/Y");
+        return get_object_vars($this);
     }
 }

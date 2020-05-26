@@ -18,15 +18,15 @@ class daoExposition extends initPdo
         try{
             $sql = "select * from exposition";
             $sth = $this->pdo->query($sql);
-            // $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class); Je precise le mod au moment du fetch
-            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS, exposition::class);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
         }
-        foreach ($resultat as $expo) {
+        /*foreach ($resultat as $expo) {
             $this->forceDateType($expo);
-        }
+        }*/
         return $resultat;
     }
 
@@ -36,7 +36,8 @@ class daoExposition extends initPdo
         try {
             $sql = "select * from exposition where dateFin > NOW() AND NOW() > dateDebut";
             $sth = $this->pdo->query($sql);
-            $resultat = $sth->fetch(\PDO::FETCH_CLASS, exposition::class);
+            $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
+            $resultat = $sth->fetch();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
@@ -46,6 +47,9 @@ class daoExposition extends initPdo
             $resultat = new exposition();
             $resultat->setTitre("NULL");
         }
+        /*else {
+            $this->forceDateType($resultat);
+        }*/
         return $resultat;
     }
 
@@ -64,6 +68,9 @@ class daoExposition extends initPdo
             $resultat = new exposition();
             $resultat->setTitre("NULL");
         }
+        /*else {
+            $this->forceDateType($resultat);
+        }*/
         return $resultat;
     }
 

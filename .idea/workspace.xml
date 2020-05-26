@@ -20,40 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8c916885-809a-4c14-926e-c8696efb876a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/daoArtiste.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/daoExposition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/daoFilm.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/daoOeuvre.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/initPdo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/view/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07221a1-51f1-4552-bb16-c76cce5d152c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d07221a1-51f1-4552-bb16-c76cce5d152c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAllArtiste.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getAllExpo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getArtiste.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/getExpoEnCours.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertArtiste.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/insertExpo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/prod.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/prod.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/metier/exposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/exposition.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metier/film.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/film.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metier/oeuvre.php" beforeDir="false" afterPath="$PROJECT_DIR$/metier/oeuvre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/const.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoArtiste.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoExposition.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoFilm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/daoOeuvre.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modele/initPdo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppe2_bdd.mwb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/daoArtiste.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/daoArtiste.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/daoExposition.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/daoExposition.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +90,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dumpAutoload D:/dev/ppe2back/composer.json" value="--no-interaction --ansi --verbose" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ppe2front" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -205,7 +175,9 @@
       <workItem from="1589656243471" duration="261000" />
       <workItem from="1589657869900" duration="805000" />
       <workItem from="1590413829136" duration="65000" />
-      <workItem from="1590414054494" duration="2925000" />
+      <workItem from="1590414054494" duration="5982000" />
+      <workItem from="1590473022042" duration="1006000" />
+      <workItem from="1590491742056" duration="741000" />
     </task>
     <task id="LOCAL-00001" summary="config-ok">
       <created>1586104335680</created>
@@ -407,13 +379,14 @@
     <state x="291" y="-687" width="461" height="293" key="ComposerInitDialogKey/-318.-1080.1920.1080/0.0.1280.800@-318.-1080.1920.1080" timestamp="1588150264570" />
     <state x="406" y="291" key="ComposerInitDialogKey/0.0.1280.800@0.0.1280.800" timestamp="1586104363089" />
     <state x="487" y="300" width="408" height="238" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1589266003822" />
-    <state x="2773" y="269" width="428" height="484" key="FileChooserDialogImpl" timestamp="1589579609941">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="853" y="259" width="428" height="484" key="FileChooserDialogImpl" timestamp="1590421709192">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="853" y="259" key="FileChooserDialogImpl/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589544868716" />
     <state x="682" y="205" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1589232248444" />
+    <state x="853" y="259" key="FileChooserDialogImpl/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590421709192" />
     <state x="2773" y="269" width="428" height="484" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589579609941" />
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1590415384106">
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom" timestamp="1590474142953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="169" key="GridCell.Tab.0.bottom/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
@@ -421,9 +394,9 @@
     <state width="1878" height="178" key="GridCell.Tab.0.bottom/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981142" />
     <state width="1238" height="176" key="GridCell.Tab.0.bottom/0.0.1280.800@0.0.1280.800" timestamp="1588434237768" />
     <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1877" height="169" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384106" />
+    <state width="1877" height="169" key="GridCell.Tab.0.bottom/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590474142953" />
     <state width="1874" height="167" key="GridCell.Tab.0.bottom/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
-    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1590415384105">
+    <state width="1877" height="169" key="GridCell.Tab.0.center" timestamp="1590474142953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="169" key="GridCell.Tab.0.center/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
@@ -431,9 +404,9 @@
     <state width="1878" height="178" key="GridCell.Tab.0.center/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981140" />
     <state width="1238" height="176" key="GridCell.Tab.0.center/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
     <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1877" height="169" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1877" height="169" key="GridCell.Tab.0.center/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590474142953" />
     <state width="1874" height="167" key="GridCell.Tab.0.center/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
-    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1590415384105">
+    <state width="1877" height="169" key="GridCell.Tab.0.left" timestamp="1590474142952">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="169" key="GridCell.Tab.0.left/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
@@ -441,9 +414,9 @@
     <state width="1878" height="178" key="GridCell.Tab.0.left/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981139" />
     <state width="1238" height="176" key="GridCell.Tab.0.left/0.0.1280.800@0.0.1280.800" timestamp="1588434237766" />
     <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1877" height="169" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1877" height="169" key="GridCell.Tab.0.left/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590474142952" />
     <state width="1874" height="167" key="GridCell.Tab.0.left/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
-    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1590415384105">
+    <state width="1877" height="169" key="GridCell.Tab.0.right" timestamp="1590474142953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="169" key="GridCell.Tab.0.right/-1920.8.1536.832/0.0.1920.1040@0.0.1920.1040" timestamp="1589550111452" />
@@ -451,7 +424,7 @@
     <state width="1878" height="178" key="GridCell.Tab.0.right/-318.-1080.1920.1080/0.23.1280.777@-318.-1080.1920.1080" timestamp="1588147981141" />
     <state width="1238" height="176" key="GridCell.Tab.0.right/0.0.1280.800@0.0.1280.800" timestamp="1588434237767" />
     <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1589271768891" />
-    <state width="1877" height="169" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590415384105" />
+    <state width="1877" height="169" key="GridCell.Tab.0.right/1920.0.1536.832/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1590474142953" />
     <state width="1874" height="167" key="GridCell.Tab.0.right/1920.0.1920.1080/0.0.1920.1043@1920.0.1920.1080" timestamp="1589580746540" />
     <state width="221" height="457" key="HiddenNamespacesPopup" timestamp="1588524527822">
       <screen x="-318" y="-1080" width="1920" height="1080" />
