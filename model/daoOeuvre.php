@@ -7,11 +7,11 @@ use metier\oeuvre;
 
 class daoOeuvre extends initPdo
 {
-    public function getOeuvres(int $idOeuvre) : array
+    public function getOeuvres(int $idArtiste) : array
     {
         $resultat[0]=null;
         try {
-            $sql = "select * from oeuvre where artiste = $idOeuvre";
+            $sql = "select * from oeuvre where artiste = $idArtiste";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, oeuvre::class);
             $sth->execute();

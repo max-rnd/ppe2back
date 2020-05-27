@@ -25,7 +25,7 @@ class initPdo
             $this->pdo = new \PDO($dsn,$user,$pass);
             $this->pdo->setAttribute( \PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
         }
-        catch (\PDOException $e){
+        catch (\PDOException $e) {
             $this->objLog->insertErrException($e);
             die();
         }

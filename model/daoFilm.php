@@ -11,7 +11,7 @@ class daoFilm extends initPdo
     {
         $resultat[0]=null;
         try {
-            $sql = "select * from artiste where artiste = $idArtiste";
+            $sql = "select * from film where artiste = $idArtiste";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, film::class);
             $sth->execute();

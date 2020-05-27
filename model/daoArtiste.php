@@ -51,12 +51,11 @@ class daoArtiste extends initPdo
         $ok = true;
         try {
             $tab['nom'] = $lartiste->getNom();
-            $tab['prenom'] = $lartiste->getPrenom();
             $tab['portait'] = $lartiste->getPortait();
             $tab['resuBio'] = $lartiste->getResuBio();
             $tab['bio'] = $lartiste->getBio();
 
-            $sql = "INSERT INTO artiste (nom, prenom, portait, resuBio, bio) VALUES (:nom, :prenom, :portait, :resuBio, :bio)";
+            $sql = "INSERT INTO artiste (nom, portait, resuBio, bio) VALUES (:nom, :portait, :resuBio, :bio)";
             $sth = $this->pdo->prepare($sql);
             $sth->execute($tab);
         }

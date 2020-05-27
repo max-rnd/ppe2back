@@ -8,7 +8,6 @@ class artiste implements \JsonSerializable
 {
     protected $id;
     protected $nom;
-    protected $prenom;
     protected $portait;
     protected $resuBio;
     protected $bio;
@@ -44,22 +43,6 @@ class artiste implements \JsonSerializable
     public function setNom($nom): void
     {
         $this->nom = $nom;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
-    }
-
-    /**
-     * @param mixed $prenom
-     */
-    public function setPrenom($prenom): void
-    {
-        $this->prenom = $prenom;
     }
 
     /**

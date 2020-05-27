@@ -6,10 +6,10 @@ use Slim\Factory\AppFactory;
 
 require_once __DIR__."/vendor/autoload.php";
 
-$container = new Container();
-$container->set('upload_directory', __DIR__ . '/uploads');
+//$container = new Container();
+//$container->set('upload_directory', __DIR__ . '/uploads');
 
-AppFactory::setContainer($container);
+//AppFactory::setContainer($container);
 $app = AppFactory::create();
 
 // Default page
@@ -36,28 +36,37 @@ $app->get("/expo", function (Request $request, Response $response, $args) {
     return addHeader($response);
 });
 
-$app->get("/expo/all", function (Request $request, Response $response, $args) {
+$app->get("/expo/{idExpo}", function (Request $request, Response $response, $args) {
+    $dao = new \model\daoExposition();
+    $expo = $dao->getExpo($args['idExpo']);
+    if ($expo->getTitre() == "NULL")
+        $expo = $dao->getProchaineExpo();
+    $response->getBody()->write(json_encode($expo));
+    return addHeader($response);
+});
+
+$app->get("/allExpo", function (Request $request, Response $response, $args) {
     $dao = new \model\daoExposition();
     $expo = $dao->getAllExpo();
     $response->getBody()->write(json_encode($expo));
     return addHeader($response);
 });
 
-$app->get('/artiste/{id}', function (Request $request, Response $response, array $args) {
+$app->get('/artiste/{idArtiste}', function (Request $request, Response $response, array $args) {
     $dao = new \model\daoArtiste();
-    $response->getBody()->write(json_encode($dao->getArtiste($args['id'])));
+    $response->getBody()->write(json_encode($dao->getArtiste($args['idArtiste'])));
     return addHeader($response);
 });
 
-$app->get('/oeuvre/{id}', function (Request $request, Response $response, array $args) {
+$app->get('/oeuvres/{idArtiste}', function (Request $request, Response $response, array $args) {
     $dao = new \model\daoOeuvre();
-    $response->getBody()->write(json_encode($dao->getOeuvres($args['id'])));
+    $response->getBody()->write(json_encode($dao->getOeuvres($args['idArtiste'])));
     return addHeader($response);
 });
 
-$app->get('/film/{id}', function (Request $request, Response $response, array $args) {
+$app->get('/films/{idArtiste}', function (Request $request, Response $response, array $args) {
     $dao = new \model\daoFilm();
-    $response->getBody()->write(json_encode($dao->getFilms($args['id'])));
+    $response->getBody()->write(json_encode($dao->getFilms($args['idArtiste'])));
     return addHeader($response);
 });
 
