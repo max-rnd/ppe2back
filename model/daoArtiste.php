@@ -29,7 +29,7 @@ class daoArtiste extends initPdo
     }
     public function getArtiste(int $id) : artiste
     {
-        $resultat=null;
+        $resultat = null;
         try {
             $sql = "select * from artiste where id = $id";
             $sth = $this->pdo->query($sql);

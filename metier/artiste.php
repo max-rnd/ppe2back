@@ -8,7 +8,7 @@ class artiste implements \JsonSerializable
 {
     protected $id;
     protected $nom;
-    protected $portait;
+    protected $portrait;
     protected $resuBio;
     protected $bio;
 
@@ -54,11 +54,11 @@ class artiste implements \JsonSerializable
     }
 
     /**
-     * @param mixed $portait
+     * @param mixed $portrait
      */
-    public function setPortait($portait): void
+    public function setPortait($portrait): void
     {
-        $this->portait = $portait;
+        $this->portait = $portrait;
     }
 
     /**

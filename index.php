@@ -25,8 +25,7 @@ function addHeader(Response $response) : Response {
         ->withStatus(200);
 }
 
-// GET
-
+// EXPOSITION
 $app->get("/expo", function (Request $request, Response $response, $args) {
     $dao = new \model\daoExposition();
     $expo = $dao->getExpoEnCours();
@@ -35,7 +34,6 @@ $app->get("/expo", function (Request $request, Response $response, $args) {
     $response->getBody()->write(json_encode($expo));
     return addHeader($response);
 });
-
 $app->get("/expo/{idExpo}", function (Request $request, Response $response, $args) {
     $dao = new \model\daoExposition();
     $expo = $dao->getExpo($args['idExpo']);
@@ -44,8 +42,29 @@ $app->get("/expo/{idExpo}", function (Request $request, Response $response, $arg
     $response->getBody()->write(json_encode($expo));
     return addHeader($response);
 });
+$app->post('/expo/{idExpo}/edit', function (Request $request, Response $response, $args) {
+    $dao = new model\daoExposition();
+    $allPostPutVars= $request->getParsedBody();
+    $lexpo = new \metier\exposition();
 
-$app->get("/allExpo", function (Request $request, Response $response, $args) {
+    $lexpo->setId($args['idExpo']);
+    $lexpo->setTitre($allPostPutVars['titre']);
+    $lexpo->setDateDebut(new \DateTime($allPostPutVars['dateDebut']));
+    $lexpo->setDateFin(new \DateTime($allPostPutVars['dateFin']));
+    $lexpo->setNoteComm($allPostPutVars['noteComm']);
+    $lexpo->setArtiste($allPostPutVars['artiste']);
+
+    if ($dao->edit($lexpo)) {
+        $response->getBody()->write(json_encode($lexpo));
+    }
+    else {
+        $response->getBody()->write("fail");
+    }
+    return addHeader($response);
+});
+
+// ARTISTE
+$app->get("/allexpo", function (Request $request, Response $response, $args) {
     $dao = new \model\daoExposition();
     $expo = $dao->getAllExpo();
     $response->getBody()->write(json_encode($expo));
@@ -74,26 +93,7 @@ $app->get('/films/{idArtiste}', function (Request $request, Response $response, 
 // POST
 
 // titre ; noteComm ; dateDebut ; dateFin ; idArtiste
-$app->post('/expo/new', function (Request $request, Response $response, $args) {
-    $dao = new model\daoExposition();
-    $allPostPutVars= $request->getParsedBody();
-    $lexpo = new \metier\exposition();
 
-    $lexpo->setTitre($allPostPutVars['titre']);
-    $lexpo->setNoteComm($allPostPutVars['noteComm']);
-    $lexpo->setDateDebut(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateDebut"]));
-    $lexpo->setDateFin(\DateTime::createFromFormat("Y-m-d",$allPostPutVars["DateFin"]));
-    $lexpo->setArtiste($allPostPutVars['idArtiste']);
-    $dao->insert($lexpo);
-
-    if ($dao->insert($lexpo)) {
-        $response->getBody()->write(json_encode($lexpo));
-    }
-    else {
-        $response->getBody()->write("fail");
-    }
-    return addHeader($response);
-});
 
 // model etd4 (avec fichier)
 $app->post('/artiste/new', function (Request $request, Response $response, $args) {

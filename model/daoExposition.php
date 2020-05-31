@@ -10,7 +10,7 @@ class daoExposition extends initPdo
     {
         $resultat[0] = null;
         try{
-            $sql = "select * from exposition where dateFin > NOW() ORDER BY dateDebut";
+            $sql = "select * from exposition ORDER BY dateDebut";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, exposition::class);
             $resultat = $sth->fetchAll();
@@ -98,5 +98,25 @@ class daoExposition extends initPdo
             $ok = false;
         }
         return $ok;
+    }
+    public function edit(exposition $lexpo) :bool {
+        $ras = true;
+        try {
+            $tab['id'] = $lexpo->getId();
+            $tab['titre'] = $lexpo->getTitre();
+            $tab['noteComm'] = $lexpo->getNoteComm();
+            $tab['dateDebut'] = $lexpo->getDateDebut()->format('Y-m-d');
+            $tab['dateFin'] = $lexpo->getDateFin()->format('Y-m-d');
+            $tab['artiste'] = $lexpo->getArtiste();
+
+            $sql = "UPDATE exposition SET titre = :titre, noteComm = :noteComm, dateDebut = :dateDebut, dateFin = :dateFin, artiste = :artiste where id = :id";
+            $sth = $this->pdo->prepare($sql);
+            $sth->execute($tab);
+        } catch (\PDOException $e) {
+            $this->objLog->insertErrException($e);
+            $ras = false;
+        }
+
+        return $ras;
     }
 }

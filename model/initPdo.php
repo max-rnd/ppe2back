@@ -18,7 +18,7 @@ class initPdo
     {
         $user = "root";
         $pass = "";
-        $dsn ='mysql:host=localhost;dbname=ppe;charset=UTF8';
+        $dsn ='mysql:host=localhost;dbname=ppe2;charset=UTF8';
 
         $this->objLog = new \util\log();
         try {

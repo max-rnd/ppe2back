@@ -4,7 +4,7 @@
 namespace metier;
 
 
-class film
+class film implements \JsonSerializable
 {
     protected $id;
     protected $nom;
@@ -92,4 +92,9 @@ class film
         $this->artiste = $artiste;
     }
 
+    public function jsonSerialize()
+    {
+        // TODO: Implement jsonSerialize() method.
+        return get_object_vars($this);
+    }
 }

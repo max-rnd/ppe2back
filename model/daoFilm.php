@@ -7,20 +7,20 @@ use metier\film;
 
 class daoFilm extends initPdo
 {
-    public function getFilms(int $idArtiste) : array
+    public function getFilms($idArtiste) : array
     {
-        $resultat[0]=null;
+        $resultat[0] =  null;
         try {
             $sql = "select * from film where artiste = $idArtiste";
             $sth = $this->pdo->query($sql);
             $sth->setFetchMode(\PDO::FETCH_CLASS, film::class);
             $sth->execute();
-            $resultat = $sth->fetchAll(\PDO::FETCH_CLASS);
+            $resultat = $sth->fetchAll();
         }
         catch (\PDOException $e){
             $this->objLog->insertErrException($e);
         }
-        if ($resultat[0]==null)
+        if ($resultat == null)
         {
             $resultat[0] = new film();
             $resultat[0]->setNom("NULL");
